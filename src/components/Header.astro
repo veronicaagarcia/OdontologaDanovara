@@ -2,29 +2,28 @@
 import HeaderButton from "./HeaderButton.astro"
 ---
 
-            <header class="pt-6 px-4 mx-auto lg:pt-10 lg:px-6 bg-gradient-to-b from-background via-primaryDark to-primaryDark relative">
+            <header class="pt-6 px-4 mx-auto md:pt-10 md:px-6 bg-gradient-to-b from-background via-primaryDark to-primaryDark relative">
                 <div class="mx-auto text-center">
-                    <h1 class="mb-4 text-5xl w-full tracking-tight font-bold text-background" >Ortodoncista Carolina Danovara</h1>
-                    <p class="font-light text-gray-500 sm:text-xl text-center mb-8 cursor-none">
+                    <h1 class="mb-4 text-3xl md:text-5xl w-full tracking-tight font-bold text-background" >Ortodoncista Carolina Danovara</h1>
+                    <p class="font-light text-gray-500 text-lg md:text-xl text-center mb-8 cursor-none">
                     <strong class="text-secondary hover:text-secondaryLight">Vos encargate de ser feliz, </strong><strong class="text-secondaryLight hover:text-secondary">nosotros de tu sonrisa</strong></p>
                 </div>
-                <div class="absolute bottom-2.5 right-4">
-                    <!-- <HeaderButton rute="/otro" >Turnos</HeaderButton> -->
-                    <a class='flex-row justify-center text-white hover:text-primaryDark cursor-pointer hover:bg-background focus:ring-2 focus:outline-none focus:ring-[#b74a60]/50 font-bold rounded-lg px-4 py-2 text-center inline-flex items-center dark:focus-ring[#b74a60]/55 mr-2 mb-2 hover:shadow-lg hover:shadow-black transition-all duration-300 ease-in-out hover:scale-110 scale-95 gap-x-2 opacity-90 hover:opacity-100' href="/otro">
+                <div class="absolute bottom-0 md:bottom-2.5 right-6 md:right-4">
+                    <a class='flex-row border-2 border-primaryDark md:border-none w-36 md:w-auto text-xs md:text-base justify-center text-primaryDark md:text-white hover:text-primaryDark cursor-pointer hover:bg-background focus:ring-2 focus:outline-none focus:ring-[#b74a60]/50 md:font-bold rounded-lg px-4 py-2 text-center inline-flex items-center dark:focus-ring[#b74a60]/55 mr-2 mb-2 hover:shadow-lg hover:shadow-black transition-all duration-300 ease-in-out hover:scale-110 scale-95 gap-x-2 opacity-90 hover:opacity-100' href="/turnos">
                         TURNOS
                     </a>
                 </div>
-                <nav class="-ml-4 lg:-ml-6 p-2 flex flex-col items-center justify-between w-11/12 text-center md:flex-row bg-background rounded-tr-2xl">
+                <nav class="-ml-4 md:-ml-6 p-2 flex flex-wrap items-center justify-between w-12/12 md:w-11/12 text-center md:flex-nowrap md:flex-row bg-background rounded-tr-2xl">
                     <HeaderButton rute="/">INICIO</HeaderButton>
-                    <HeaderButton rute="/about">CONOCEME</HeaderButton>
+                    <HeaderButton rute="/conoceme">CONOCEME</HeaderButton>
                     <HeaderButton rute="/otro">ALINEADORES</HeaderButton>
-                    <HeaderButton rute="/otro" >BRACKETS</HeaderButton> 
+                    <HeaderButton rute="/brackets" >BRACKETS</HeaderButton> 
                     <HeaderButton rute="/otro" >PIERCING DENTAL</HeaderButton>
                     <!-- <HeaderButton rute="/otro" >BRACES OFF</HeaderButton> -->
                     <!-- <HeaderButton rute="/otro" >MALOCLUSIONES</HeaderButton> -->
                     <HeaderButton rute="/otro" >BLANQUEAMIENTOS</HeaderButton>
                     <!-- <HeaderButton rute="/otro" >Info ninos</HeaderButton> -->
-                    <HeaderButton rute="/otro" >PACIENTES</HeaderButton> 
+                    <HeaderButton rute="/pacientes" >PACIENTES</HeaderButton> 
                 </nav>
             </header>
         

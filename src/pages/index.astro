@@ -5,6 +5,68 @@ import Layout from '../layouts/Layout.astro'
 
 <Layout title="Ortodoncia La Plata">
 	<main>
-		<h2 class="text-black">PRINCIPAL</h2>
+		<!-- carousel -->
+		<div class="w-full mt-6 md:mt-12 flex flex-col">
+			<h2 class="mb-2 md:mb-6 text-center text-lg text-contrast font-bold oppacity-50">Estos son los tratamientos que realizamos en el consultorio.</h2>
+			<div id="default-carousel" class="relative mx-auto w-10/12" data-carousel="slide">
+				<!-- Carousel wrapper -->
+				<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+					 <!-- Item 1 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img src="/images/caruselInicio1.png" class="absolute block max-w-full w-11/12 md:w-1/2 rounded-lg object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+					</div>
+					<!-- Item 2 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img src="/images/caruselInicio2.png" class="absolute block max-w-full w-11/12 md:w-1/2 rounded-lg object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+					</div>
+					<!-- Item 3 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img src="/images/caruselInicio3.png" class="absolute block max-w-full w-11/12 md:w-1/2 rounded-lg object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+					</div>
+				</div>
+				<!-- Slider indicators -->
+				<div class="absolute z-30 flex -translate-x-1/2 bottom-2 left-1/2 space-x-3 rtl:space-x-reverse">
+					<button type="button" class="w-2 md:w-3 h-2 md:h-3 bg-contrast rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+					<button type="button" class="w-2 md:w-3 h-2 md:h-3 bg-contrast rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+					<button type="button" class="w-2 md:w-3 h-2 md:h-3 bg-contrast rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+				</div>
+				<!-- Slider controls -->
+				<button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+					<span class="inline-flex items-center justify-center w-8 md:w-10 h-8 md:h-10 rounded-full bg-contrast/30 dark:bg-gray-800/30 group-hover:bg-contrast/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-contrast dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+						<svg class="w-3 md:w-4 h-3 md:h-4 text-contrast dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+						</svg>
+						<span class="sr-only">Previous</span>
+					</span>
+				</button>
+				<button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+					<span class="inline-flex items-center justify-center w-8 md:w-10 h-8 md:h-10 rounded-full bg-contrast/30 dark:bg-gray-800/30 group-hover:bg-contrast/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-contrast dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+						<svg class="w-3 md:w-4 h-3 md:h-4 text-contrast dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+						</svg>
+						<span class="sr-only">Next</span>
+					</span>
+				</button>
+			</div>
+		</div>
+		<!-- services -->
+		<div class="w-full mt-6 md:mt-12 flex flex-col items-center md:flex-row justify-around">
+			<figure class="w-10/12 md:w-1/2">
+				<img
+				class="rounded-lg"
+				src="/images/principal.png"
+				aria-hidden="true"/>
+			</figure>
+			<div class="ml-4 py-2 text-black oppacity-50 w-10/12 md:w-2/5">
+				<p class="mb-2 md:mb-6 text-center text-lg text-contrast font-bold oppacity-50">¡Descubre una sonrisa radiante con nuestros servicios especializados!</p>
+				<p class=" text-black oppacity-50">🦷✨🌟<span class="text-contrast font-bold">Ortodoncia :</span> Transformamos tu sonrisa con opciones como brackets metálicos, alineadores invisibles, y más.</p>
+				<p class=" text-black oppacity-50">😁 <span class="text-contrast font-bold">Blanqueamiento Dental :</span>Devuelve el brillo a tu sonrisa de manera segura y efectiva.</p>
+				<p class=" text-black oppacity-50">👩‍⚕️ <span class="text-contrast font-bold">Ortopedia Maxilar :</span> Ortodoncia en los mas chiquitos con aparatos removibles o alineadores.</p>
+				<p class=" text-black oppacity-50">🌬️ <span class="text-contrast font-bold">Limpieza Dental :</span> Eliminamos placa, sarro y manchas para una salud bucal óptima.</p>
+				<p class=" text-black oppacity-50">👁️‍🗨️ <span class="text-contrast font-bold">Alineadores Invisibles :</span> Logra una sonrisa perfecta de manera discreta y cómoda.</p>
+				<p class=" text-black oppacity-50">Nuestro compromiso es brindarte una atención integral para que tu sonrisa sea tu mejor carta de presentación. </p>
+				<p class="mt-2 md:mt-4 text-center text-contrast font-bold oppacity-50">¡Agenda tu cita hoy! 😃💙</p>
+			</div>
+		</div>
 	</main>
 </Layout>
