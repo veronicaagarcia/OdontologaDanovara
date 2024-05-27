@@ -2,28 +2,64 @@
 import HeaderButton from "./HeaderButton.astro"
 ---
 
-            <header class="pt-6 px-4 mx-auto md:pt-10 md:px-6 bg-gradient-to-b from-background via-primaryDark to-primaryDark relative">
+            <header class="pt-6 px-4 mx-auto md:pt-10 md:px-6 bg-almostWhite relative">
                 <div class="mx-auto text-center">
-                    <h1 class="mb-4 text-3xl md:text-5xl w-full tracking-tight font-bold text-background" >Ortodoncista Carolina Danovara</h1>
-                    <p class="font-light text-gray-500 text-lg md:text-xl text-center mb-8 cursor-none">
-                    <strong class="text-secondary hover:text-secondaryLight">Vos encargate de ser feliz, </strong><strong class="text-secondaryLight hover:text-secondary">nosotros de tu sonrisa</strong></p>
+                    <h1 class="mb-6 text-2xl md:text-5xl w-full tracking-tight font-bold text-contrast" >Ortodoncista Carolina Danovara</h1>
+                    <!-- <p class="font-light hidden md:flex text-xl justify-center mb-8 cursor-none">
+                    <strong class="text-secondary hover:text-primary pr-1">Vos encargate de ser feliz, </strong><strong class="text-primary hover:text-secondary"> nosotros de tu sonrisa</strong></p> -->
                 </div>
-                <div class="absolute bottom-0 md:bottom-2.5 right-6 md:right-4">
-                    <a class='flex-row border-2 border-primaryDark md:border-none w-36 md:w-auto text-xs md:text-base justify-center text-primaryDark md:text-white hover:text-primaryDark cursor-pointer hover:bg-background focus:ring-2 focus:outline-none focus:ring-[#b74a60]/50 md:font-bold rounded-lg px-4 py-2 text-center inline-flex items-center dark:focus-ring[#b74a60]/55 mr-2 mb-2 hover:shadow-lg hover:shadow-black transition-all duration-300 ease-in-out hover:scale-110 scale-95 gap-x-2 opacity-90 hover:opacity-100' href="/turnos">
+                <!-- menu small -->
+                <nav class="bg-primaryDarck md:hidden">
+                    <div class="flex flex-wrap justify-end items-center mx-auto max-w-screen-xl p-4">
+                        <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg focus:outline-none focus:ring-2 focus:ring-contrast" aria-controls="mega-menu-full" aria-expanded="false">
+                            <svg class="w-5 h-5 text-contrast" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                            </svg>
+                        </button>
+                        <div id="mega-menu-full" class="items-center justify-between hidden w-full">
+                            <ul class="flex flex-col mt-4 font-medium rtl:space-x-reverse">
+                                <li>
+                                    <a href="/" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background" aria-current="page">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="/alineadores" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Alineadores</a>
+                                </li>
+                                <li>
+                                    <a href="/brackets" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Brackets</a>
+                                </li>
+                                <li>
+                                    <a href="/blanqueamiento" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Blanqueamientos</a>
+                                </li>
+                                <li>
+                                    <a href="/piercing" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Piercing Dentales</a>
+                                </li>
+                                <li>
+                                    <a href="/pacientes" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Pacientes</a>
+                                </li>
+                                <li>
+                                    <a href="/conoceme" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Conoceme</a>
+                                </li>
+                                <li>
+                                    <a href="/turnos" class="block py-2 px-3 text-secondaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Turnos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- menu a partir de md -->
+                <div class="hidden md:flex absolute bottom-2.5 right-4">
+                    <a class='flex-row border-none w-auto text-base justify-center text-white hover:text-primaryDark cursor-pointer hover:bg-background focus:ring-2 focus:outline-none focus:ring-[#b74a60]/50 font-bold rounded-lg px-4 py-2 text-center inline-flex items-center dark:focus-ring[#b74a60]/55 mr-2 mb-2 hover:shadow-lg hover:shadow-black transition-all duration-300 ease-in-out hover:scale-110 scale-95 gap-x-2 opacity-90 hover:opacity-100' href="/turnos">
                         TURNOS
                     </a>
                 </div>
-                <nav class="-ml-4 md:-ml-6 p-2 flex flex-wrap items-center justify-between w-12/12 md:w-11/12 text-center md:flex-nowrap md:flex-row bg-background rounded-tr-2xl">
+                <nav class="hidden md:flex -ml-6 p-2 items-center justify-between w-11/12 text-center flex-nowrap flex-row bg-background rounded-tr-2xl">
                     <HeaderButton rute="/">INICIO</HeaderButton>
-                    <HeaderButton rute="/conoceme">CONOCEME</HeaderButton>
-                    <HeaderButton rute="/otro">ALINEADORES</HeaderButton>
+                    <HeaderButton rute="/alineadores">ALINEADORES</HeaderButton>
                     <HeaderButton rute="/brackets" >BRACKETS</HeaderButton> 
-                    <HeaderButton rute="/otro" >PIERCING DENTAL</HeaderButton>
-                    <!-- <HeaderButton rute="/otro" >BRACES OFF</HeaderButton> -->
-                    <!-- <HeaderButton rute="/otro" >MALOCLUSIONES</HeaderButton> -->
-                    <HeaderButton rute="/otro" >BLANQUEAMIENTOS</HeaderButton>
-                    <!-- <HeaderButton rute="/otro" >Info ninos</HeaderButton> -->
+                    <HeaderButton rute="/blanqueamiento" >BLANQUEAMIENTOS</HeaderButton>
+                    <HeaderButton rute="/piercing" >PIERCING DENTAL</HeaderButton>
                     <HeaderButton rute="/pacientes" >PACIENTES</HeaderButton> 
+                    <HeaderButton rute="/conoceme">CONOCEME</HeaderButton>
                 </nav>
             </header>
         

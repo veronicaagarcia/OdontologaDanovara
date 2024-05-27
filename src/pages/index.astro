@@ -1,72 +1,44 @@
 ---
+import Card from '../components/Card.astro'
 import Layout from '../layouts/Layout.astro'
-
 ---
 
 <Layout title="Ortodoncia La Plata">
-	<main>
-		<!-- carousel -->
-		<div class="w-full mt-6 md:mt-12 flex flex-col">
-			<h2 class="mb-2 md:mb-6 text-center text-lg text-contrast font-bold oppacity-50">Estos son los tratamientos que realizamos en el consultorio.</h2>
-			<div id="default-carousel" class="relative mx-auto w-10/12" data-carousel="slide">
-				<!-- Carousel wrapper -->
-				<div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-					 <!-- Item 1 -->
-					<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						<img src="/images/caruselInicio1.png" class="absolute block max-w-full w-11/12 md:w-1/2 rounded-lg object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-					</div>
-					<!-- Item 2 -->
-					<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						<img src="/images/caruselInicio2.png" class="absolute block max-w-full w-11/12 md:w-1/2 rounded-lg object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-					</div>
-					<!-- Item 3 -->
-					<div class="hidden duration-700 ease-in-out" data-carousel-item>
-						<img src="/images/caruselInicio3.png" class="absolute block max-w-full w-11/12 md:w-1/2 rounded-lg object-cover object-center -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-					</div>
-				</div>
-				<!-- Slider indicators -->
-				<div class="absolute z-30 flex -translate-x-1/2 bottom-2 left-1/2 space-x-3 rtl:space-x-reverse">
-					<button type="button" class="w-2 md:w-3 h-2 md:h-3 bg-contrast rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-					<button type="button" class="w-2 md:w-3 h-2 md:h-3 bg-contrast rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-					<button type="button" class="w-2 md:w-3 h-2 md:h-3 bg-contrast rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-				</div>
-				<!-- Slider controls -->
-				<button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-					<span class="inline-flex items-center justify-center w-8 md:w-10 h-8 md:h-10 rounded-full bg-contrast/30 dark:bg-gray-800/30 group-hover:bg-contrast/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-contrast dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-						<svg class="w-3 md:w-4 h-3 md:h-4 text-contrast dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-						</svg>
-						<span class="sr-only">Previous</span>
-					</span>
-				</button>
-				<button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-					<span class="inline-flex items-center justify-center w-8 md:w-10 h-8 md:h-10 rounded-full bg-contrast/30 dark:bg-gray-800/30 group-hover:bg-contrast/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-contrast dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-						<svg class="w-3 md:w-4 h-3 md:h-4 text-contrast dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-						</svg>
-						<span class="sr-only">Next</span>
-					</span>
-				</button>
-			</div>
-		</div>
-		<!-- services -->
-		<div class="w-full mt-6 md:mt-12 flex flex-col items-center md:flex-row justify-around">
-			<figure class="w-10/12 md:w-1/2">
+	<main class="mx-auto pb-4 md:pb-8 flex-col justify-items-center pt-2 md:pt-4 mt-4 md:mt-8 ">
+		<p class="mb-2 md:mb-6 text-center text-lg text-contrast font-bold oppacity-50 cursor-none">
+			<strong class="text-contrast hover:text-primary pr-1">Vos encargate de ser feliz, </strong><strong class="text-primary hover:text-contrast"> nosotros de tu sonrisa</strong></p>
+		<p class="px-12 text-justify text-contrast font-medium">Estamos comprometidos con brindarte la mejor atención dental utilizando la más avanzada tecnología y los métodos más innovadores. Nuestro equipo de profesionales está altamente capacitado y dedicado a ofrecerte una experiencia cómoda y sin estrés.</p>
+		<div class="w-full mt-6 md:mt-12 flex flex-col items-center md:flex-row justify-around pt-4 md:pt-0 mb-12 bg-almostWhite rounded-tr-3xl">
+			<figure class="w-10/12 md:w-2/5">
 				<img
-				class="rounded-lg"
+				class="rounded-lg shadow-md"
 				src="/images/principal.png"
 				aria-hidden="true"/>
 			</figure>
-			<div class="ml-4 py-2 text-black oppacity-50 w-10/12 md:w-2/5">
+			<div class="ml-4 py-2 oppacity-50 w-10/12 md:w-2/5 mt-8 md:mt-0">
 				<p class="mb-2 md:mb-6 text-center text-lg text-contrast font-bold oppacity-50">¡Descubre una sonrisa radiante con nuestros servicios especializados!</p>
-				<p class=" text-black oppacity-50">🦷✨🌟<span class="text-contrast font-bold">Ortodoncia :</span> Transformamos tu sonrisa con opciones como brackets metálicos, alineadores invisibles, y más.</p>
-				<p class=" text-black oppacity-50">😁 <span class="text-contrast font-bold">Blanqueamiento Dental :</span>Devuelve el brillo a tu sonrisa de manera segura y efectiva.</p>
-				<p class=" text-black oppacity-50">👩‍⚕️ <span class="text-contrast font-bold">Ortopedia Maxilar :</span> Ortodoncia en los mas chiquitos con aparatos removibles o alineadores.</p>
-				<p class=" text-black oppacity-50">🌬️ <span class="text-contrast font-bold">Limpieza Dental :</span> Eliminamos placa, sarro y manchas para una salud bucal óptima.</p>
-				<p class=" text-black oppacity-50">👁️‍🗨️ <span class="text-contrast font-bold">Alineadores Invisibles :</span> Logra una sonrisa perfecta de manera discreta y cómoda.</p>
-				<p class=" text-black oppacity-50">Nuestro compromiso es brindarte una atención integral para que tu sonrisa sea tu mejor carta de presentación. </p>
-				<p class="mt-2 md:mt-4 text-center text-contrast font-bold oppacity-50">¡Agenda tu cita hoy! 😃💙</p>
+				<p class=" text-black oppacity-50"><span class="text-contrast font-bold">Ortodoncia :</span> Transformamos tu sonrisa con opciones como brackets metálicos, alineadores invisibles, y más.</p>
+				<p class=" text-black oppacity-50"><span class="text-contrast font-bold">Blanqueamiento Dental :</span> Devuelve el brillo a tu sonrisa de manera segura y efectiva.</p>
+				<p class=" text-black oppacity-50"><span class="text-contrast font-bold">Ortopedia Maxilar :</span> Ortodoncia en los mas chiquitos con aparatos removibles o alineadores.</p>
+				<p class=" text-black oppacity-50"><span class="text-contrast font-bold">Limpieza Dental :</span> Eliminamos placa, sarro y manchas para una salud bucal óptima.</p>
+				<p class=" text-black oppacity-50"><span class="text-contrast font-bold">Alineadores Invisibles :</span> Logra una sonrisa perfecta de manera discreta y cómoda.</p>
+				<p class="mt-2 text-black oppacity-50">Nuestro compromiso es brindarte una atención integral para que tu sonrisa sea tu mejor carta de presentación. </p>
+				<p class="mt-2 md:mt-4 text-center text-contrast font-bold oppacity-50">¡Agenda tu cita hoy!</p>
 			</div>
+		</div>
+		<div class="flex flex-col justify-center items-center md:flex-row md:justify-between mt-6 md:mt-12 gap-2">
+			<Card title="Problemas más frecuentes que podemos corregir con ortodoncia:">
+				<p><stron class="font-semibold text-primaryDark">Sobremordida:</stron> Los dientes superiores cubren los inferiores en oclusión.</p>
+				<p><stron class="font-semibold text-primaryDark">Mordida invertida:</stron> los dientes inferiores sobresalen sobre los dientes superiores.</p>
+				<p><stron class="font-semibold text-primaryDark">Mordida abierta:</stron> Se da cuando existe un espacio entre los dientes anteriores superiores y los anteriores inferiores.</p>
+				<p><stron class="font-semibold text-primaryDark">Mordida cruzada:</stron> Uno o más dientes superiores ocluyen por dentro de los dientes inferiores.</p>
+			</Card>
+			<Card image="/images/ninos.png" text="Con servicios especializados en ortopedia maxilar y ortodoncia, trabajamos para asegurar que cada niño tenga una sonrisa saludable y funcional.¡Cuidamos las sonrisas más importantes con amor y experiencia!"/>
+			<Card title="Problemas más frecuentes que podemos corregir con ortodoncia:">
+				<p><stron class="font-semibold text-primaryDark">Desviación de la línea media:</stron> El centro de los dientes superiores no coincide con el centro de los dientes inferiores.</p>
+				<p><stron class="font-semibold text-primaryDark">Diastemas:</stron> Se trata de espacios existentes entre los dientes que pueden provocar la aparición de enfermedades periodontales.</p>
+				<p><stron class="font-semibold text-primaryDark">Apiñamiento:</stron> Se da cuando no existe suficiente espacio en el maxilar y puede generar dificultades para lavarse los dientes, lo que puede derivar en caries y enfermedad de las encías.</p>
+			</Card>
 		</div>
 	</main>
 </Layout>

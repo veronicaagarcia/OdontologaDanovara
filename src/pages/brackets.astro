@@ -1,28 +1,44 @@
 ---
+import Card from '../components/Card.astro'
 import Layout from '../layouts/Layout.astro'
 
 ---
 
 <Layout title="Ortodoncia La Plata | Brackets">
-	<main>
-		<div class="w-full mt-6 md:mt-12 flex flex-col md:flex-row justify-around">
-			<!-- <figure class="w-1/2">
-				<img
-				class="rounded-lg"
-				src="/images/principal.png"
-				aria-hidden="true"/>
-			</figure> -->
-			<div class="ml-4 py-2 text-black oppacity-50 w-2/5">
-				<p class="mb-2 md:mb-6 text-center text-lg text-contrast font-bold oppacity-50">¡Tratamiento finalizado! ¿Y ahora qué? 😂</p>
-				<p class=" text-black oppacity-50"> Realizamos el retiro de los brackets, eliminando el cemento (pegamento) con ditintss piedras, gomas y discos para recuperar y mantener tu boca sana.
-                Hacemos una topicación con flúor para fortalecer y reforzar el esmalte dentario y algunos pacientes me piden blanqueamiento.</p>
-				<p class=" text-black oppacity-50">➡️Contamos con distintas opciones y formas de pago.</p>
-				<!--<p class=" text-black oppacity-50">👩‍⚕️ <span class="text-contrast font-bold">Ortopedia Maxilar :</span> Ortodoncia en los mas chiquitos con aparatos removibles o alineadores.</p>
-				<p class=" text-black oppacity-50">🌬️ <span class="text-contrast font-bold">Limpieza Dental :</span> Eliminamos placa, sarro y manchas para una salud bucal óptima.</p>
-				<p class=" text-black oppacity-50">👁️‍🗨️ <span class="text-contrast font-bold">Alineadores Invisibles :</span> Logra una sonrisa perfecta de manera discreta y cómoda.</p>
-				<p class=" text-black oppacity-50">Nuestro compromiso es brindarte una atención integral para que tu sonrisa sea tu mejor carta de presentación. </p>
-				<p class="mt-2 md:mt-4 text-center text-contrast font-bold oppacity-50">¡Agenda tu cita hoy! 😃💙</p> -->
-			</div>
-		</div>
+	<main class="mx-auto pb-4 md:pb-8">
+		<p class="mb-2 md:mb-6 mt-2 md:mt-4 text-center text-lg text-contrast font-bold oppacity-50">¡Brackets Dentales!</p>
+        <div class="bg-contrast md:mr-3 rounded-3xl py-9 px-5 text-almostWhite text-center"> 
+            <p class="mb-4 font-semibold text-lg text-primaryDark">Una Solución Confiable para una Sonrisa Perfectamente Alineada.</p>
+            <p class="mb-4">Ofrecemos tratamientos con brackets dentales para corregir una amplia variedad de problemas de alineación dental. Nuestro equipo de ortodoncistas expertos está comprometido a proporcionarte resultados excepcionales y una sonrisa que te haga sentir seguro y feliz.</p>        
+            <p class="mb-4 font-semibold text-lg text-primaryDark">¿Qué son los Brackets Dentales?</p>         
+            <p class="mb-4">Los brackets dentales son pequeños dispositivos metálicos o cerámicos que se adhieren a la superficie de los dientes y se conectan entre sí mediante alambres y elásticos. Estos componentes ejercen presión suave pero constante sobre los dientes, moviéndolos gradualmente hacia su posición deseada.</p>         
+            <p class="mb-4 font-semibold text-lg text-primaryDark">Ventajas de los Brackets Dentales</p> 
+            <p class="pl-2 text-start mb-2"><strong class="font-semibold bg-primaryLight rounded-xl px-1">Efectividad Probada:</strong> Los brackets dentales son una opción confiable y probada para corregir problemas de alineación dental.</p>
+            <p class="pl-2 text-start mb-2"><strong class="font-semibold bg-primaryLight rounded-xl px-1">Personalización:</strong> Ofrecemos una variedad de opciones de brackets para adaptarse a tus necesidades y preferencias estéticas.</p>
+            <p class="mb-4 mt-4 font-semibold text-lg text-secondaryDark">Nuestro Proceso de Tratamiento con Brackets</p> 
+            <p class="pl-2 text-start mb-2"><strong class="font-semibold bg-secondary rounded-xl px-1">Consulta Inicial:</strong> Realizamos una evaluación completa de tu salud dental y discutimos tus objetivos de tratamiento.</p>
+            <p class="pl-2 text-start mb-2"><strong class="font-semibold bg-secondary rounded-xl px-1">Planificación Personalizada:</strong> Creamos un plan de tratamiento personalizado que aborde tus necesidades específicas y objetivos estéticos.</p> 
+            <p class="pl-2 text-start mb-2"><strong class="font-semibold bg-secondary rounded-xl px-1">Colocación de los Brackets:</strong> Colocamos los brackets en la superficie de tus dientes y conectamos los alambres y elásticos según el plan de tratamiento.</p>
+            <p class="pl-2 text-start mb-2"><strong class="font-semibold bg-secondary rounded-xl px-1">Ajustes Periódicos:</strong> Programamos citas regulares para realizar ajustes en tus brackets y alambres, asegurando un progreso constante hacia tu sonrisa ideal.</p>
+            <p class="pl-2 text-start mb-2"><strong class="font-semibold bg-secondary rounded-xl px-1">Retención:</strong> Una vez completado el tratamiento, te proporcionamos retenedores para mantener tus dientes en su nueva posición.</p>
+        </div> 
+		<div class="flex flex-col md:flex-row flex-wrap justify-center md:justify-between items-center md:items-stretch mt-6 md:mt-12 gap-2">
+			<Card image="/images/brackets.png" title="Tipos de brackets disponibles" text="Para iniciar un tratamiento de ortodoncia es importante evaluar el estado general de la boca y determinar cual es el tratamiento más adecuado para vos. Juntos encontraremos la manera de que consigas tus objetivos."/>
+
+			<Card image="/images/brackets3.png" text="Es el tipo de ortodoncia más convencional y la más usada. Sus resultados son muy buenos y la ventaja principal de este tipo de ortodoncia es que su precio es más accesible que el de otros tratamientos. El presupuesto del tratamiento depende de cada caso clínico en particular."/>
+
+			<Card image="/images/brackets2.png" text="Tienen la misma estructura que los brackets metálicos pero su diferencia radica en que están fabricados con materiales del mismo color que el diente (cerámica/zafiro) y que, por tanto, se mimetizan con este y pasan desapercibidos. El presupuesto del tratamiento depende de cada caso clínico en particular."/>
+
+			<Card image="/images/brackets5.png" text="Sus principales ventajas son su aspecto estético, su durabilidad y su funcionalidad, que muestran gran superioridad respecto a otras opciones. Es la opción preferida por muchos pacientes que los conocen como brackets invisibles. Por contra, su precio claramente más elevado que otras alternativas, es una gran desventaja pues no es apto para todos los bolsillos. Además tienen la ventaja de que no se tiñen con el paso del tiempo, a pesar de que se tomen bebidas colorantes, como el café, vino tinto, etc."/>
+
+			<Card image="/images/brackets4.png" text="Se colocan en la cara interna de los dientes y presentan la gran ventaja que no son visibles desde fuera. Aunque son totalmente estéticos, son complejos para colocarlos y su higiene también es más difícil. Es un tipo de ortodoncia más cara que la ortodoncia convencional. Con el fin de conseguir los mejores resultados, se fabrican a medida de cada paciente. Tienen la misma efectividad que los aparatos tradicionales, pero con la ventaja de que son imperceptibles y nadie notará que los llevas puestos."/>
+
+			<Card image="/images/brackets1.png" text="Son uno de los tratamientos de ortodoncia menos conocidos, a pesar de que se colocan con mucha frecuencia en la actualidad. Se trata de un método que no lleva ligaduras “elásticos” o lo que comúnmente llamamos “gomitas” que unen el bracket al arco, cuentan con un pequeño clip que sujeta el arco y permite ejercer fuerzas livianas y baja fricción para corregir las maloclusiones y malposiciones dentarias."/>
+
+			<Card image="/images/brackets7.png" title="¡Tratamiento finalizado! ¿Y ahora qué?" text="Realizamos el retiro de los brackets, eliminando el cemento (pegamento) con ditintss piedras, gomas y discos para recuperar y mantener tu boca sana.Hacemos una topicación con flúor para fortalecer y reforzar el esmalte dentario y algunos pacientes me piden blanqueamiento." />
+
+			<Card image="/images/brackets6.png" text="Una vez el tratamiento de ortodoncia haya terminado, deberás utilizar retenedores dentales (contención, fija o removible) De esta manera, seguirás un mantenimiento, el retenedor seguirá controlando la buena alineación de los dientes. Si no se usa de manera adecuada y no se siguen las indicaciones recomendadas, no habrá servido de nada que el paciente haya llevado ortodoncia ya que la maloclución puede recidivar." />
+
+        </div>	
 	</main>
 </Layout>

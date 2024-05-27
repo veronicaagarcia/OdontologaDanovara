@@ -5,7 +5,9 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				background: '#d7e7e0',
+				// background: '#d7e7e0',
+				almostWhite:'#d7e7e0',
+				background: '#fff',
 				primary: '#e55c78', // Ejemplo de color rosa
 				primaryLight: '#ff6e90',
 				primaryDark:'#b74a60',
@@ -13,7 +15,8 @@ export default {
 				secondaryLight: '#5cdb9b',
 				secondaryDark:'#3e8d67',
 				contrast:'#2f4858',
-				gray:'#d2d2d2'
+				gray:'#d2d2d2',
+				dark:'#202020'
 			},
 			stroke: {
 				'primary': '#e55c78',

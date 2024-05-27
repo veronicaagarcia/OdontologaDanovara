@@ -1,0 +1,16 @@
+---
+const { image, title, text } = Astro.props
+---
+
+<div class=" max-w-xs bg-contrast border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-md hover:shadow-black">
+    
+    <img class="rounded-t-lg" src={image} alt="" />
+    
+    <div class="p-5">
+        
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-secondary">{title}</h5>
+        
+        <p class="mb-3 text-center text-base font-normal text-background">{text}</p>
+        <slot/>
+    </div>
+</div>
