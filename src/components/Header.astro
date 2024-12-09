@@ -2,64 +2,65 @@
 import HeaderButton from "./HeaderButton.astro"
 ---
 
-            <header class="pt-6 px-4 mx-auto md:pt-10 md:px-6 bg-almostWhite relative">
-                <div class="mx-auto text-center">
-                    <h1 class="mb-6 text-2xl md:text-5xl w-full tracking-tight font-bold text-contrast" >Ortodoncista Carolina Danovara</h1>
-                    <!-- <p class="font-light hidden md:flex text-xl justify-center mb-8 cursor-none">
-                    <strong class="text-secondary hover:text-primary pr-1">Vos encargate de ser feliz, </strong><strong class="text-primary hover:text-secondary"> nosotros de tu sonrisa</strong></p> -->
+    <header class="pt-6 px-4 mx-auto md:pt-10 md:px-6 min-w-screen bg-contrast relative">        
+        <!-- menu small -->
+        <nav class="bg-primaryDarck md:hidden">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+                <h1 class="text-lg w-fit text-start font-mono tracking-tight font-bold text-white" >Ortodoncia Danovara</h1>
+                <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" aria-controls="mega-menu-full" aria-expanded="false">
+                    <svg class="w-5 h-5 text-secondary" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div id="mega-menu-full" class="items-center justify-between hidden w-full">
+                    <ul class="flex flex-col mt-4 font-medium rtl:space-x-reverse">
+                        <li>
+                            <a href="/" class="block py-2 text-secondary border-b border-contrast hover:bg-gray-50 dark:text-background" aria-current="page">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="/alineadores" class="block py-2 text-secondary border-b border-contrast hover:text-white">Alineadores</a>
+                        </li>
+                        <li>
+                            <a href="/brackets" class="block py-2 text-secondary border-b border-contrast hover:text-white">Brackets</a>
+                        </li>
+                        <li>
+                            <a href="/blanqueamiento" class="block py-2 text-secondary border-b border-contrast hover:text-white">Blanqueamientos</a>
+                        </li>
+                        <li>
+                            <a href="/piercing" class="block py-2 text-secondary border-b border-contrast hover:text-white">Piercing Dentales</a>
+                        </li>
+                        <li>
+                            <a href="/pacientes" class="block py-2 text-secondary border-b border-contrast hover:text-white">Pacientes</a>
+                        </li>
+                        <li>
+                            <a href="/conoceme" class="block py-2 text-secondary border-b border-contrast hover:text-white">Conóceme</a>
+                        </li>
+                        <li>
+                            <a href="/turnos" class="block py-2 text-white border-b border-contrast hover:text-secondary">Turnos</a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- menu small -->
-                <nav class="bg-primaryDarck md:hidden">
-                    <div class="flex flex-wrap justify-end items-center mx-auto max-w-screen-xl p-4">
-                        <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg focus:outline-none focus:ring-2 focus:ring-contrast" aria-controls="mega-menu-full" aria-expanded="false">
-                            <svg class="w-5 h-5 text-contrast" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                            </svg>
-                        </button>
-                        <div id="mega-menu-full" class="items-center justify-between hidden w-full">
-                            <ul class="flex flex-col mt-4 font-medium rtl:space-x-reverse">
-                                <li>
-                                    <a href="/" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background" aria-current="page">Inicio</a>
-                                </li>
-                                <li>
-                                    <a href="/alineadores" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Alineadores</a>
-                                </li>
-                                <li>
-                                    <a href="/brackets" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Brackets</a>
-                                </li>
-                                <li>
-                                    <a href="/blanqueamiento" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Blanqueamientos</a>
-                                </li>
-                                <li>
-                                    <a href="/piercing" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Piercing Dentales</a>
-                                </li>
-                                <li>
-                                    <a href="/pacientes" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Pacientes</a>
-                                </li>
-                                <li>
-                                    <a href="/conoceme" class="block py-2 px-3 text-primaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Conoceme</a>
-                                </li>
-                                <li>
-                                    <a href="/turnos" class="block py-2 px-3 text-secondaryDark border-b border-contrast hover:bg-gray-50 dark:text-background">Turnos</a>
-                                </li>
-                            </ul>
-                        </div>
+            </div>
+        </nav>
+            <!-- menu a partir de md -->
+                <div class="hidden md:flex flex-col">
+                    <div class="mx-auto text-center">
+                        <h1 class="mb-6 text-lg md:text-2xl xl:text-4xl w-full font-mono py-4 uppercase tracking-wide font-medium text-white" >Ortodoncia Carolina Danovara</h1>
                     </div>
-                </nav>
-                <!-- menu a partir de md -->
-                <div class="hidden md:flex absolute bottom-2.5 right-4">
-                    <a class='flex-row border-none w-auto text-base justify-center text-white hover:text-primaryDark cursor-pointer hover:bg-background focus:ring-2 focus:outline-none focus:ring-[#b74a60]/50 font-bold rounded-lg px-4 py-2 text-center inline-flex items-center dark:focus-ring[#b74a60]/55 mr-2 mb-2 hover:shadow-lg hover:shadow-black transition-all duration-300 ease-in-out hover:scale-110 scale-95 gap-x-2 opacity-90 hover:opacity-100' href="/turnos">
-                        TURNOS
-                    </a>
+                    <div class="absolute bottom-2.5 right-4 p-1">
+                        <a class='flex-row border-none w-auto text-sm lg:text-base xl:text-lg 2xl:text-xl justify-center text-white hover:text-secondary cursor-pointer hover:drop-shadow-lg hover:scale-110 md:px-0 lg:px-4 py-2 text-center inline-flex items-center mr-2 mb-0 md:mb-2 transition-all duration-300 ease-in-out scale-95 gap-x-2' href="/turnos">
+                            Turnos
+                        </a>
+                    </div>
                 </div>
-                <nav class="hidden md:flex -ml-6 p-2 items-center justify-between w-11/12 text-center flex-nowrap flex-row bg-background rounded-tr-2xl">
-                    <HeaderButton rute="/">INICIO</HeaderButton>
-                    <HeaderButton rute="/alineadores">ALINEADORES</HeaderButton>
-                    <HeaderButton rute="/brackets" >BRACKETS</HeaderButton> 
-                    <HeaderButton rute="/blanqueamiento" >BLANQUEAMIENTOS</HeaderButton>
-                    <HeaderButton rute="/piercing" >PIERCING DENTAL</HeaderButton>
-                    <HeaderButton rute="/pacientes" >PACIENTES</HeaderButton> 
-                    <HeaderButton rute="/conoceme">CONOCEME</HeaderButton>
+                <nav class="hidden md:flex -ml-6 p-4 items-center justify-between w-11/12 text-center flex-nowrap flex-row bg-white rounded-tr-2xl">
+                    <HeaderButton rute="/">Inicio</HeaderButton>
+                    <HeaderButton rute="/alineadores">Alineadores</HeaderButton>
+                    <HeaderButton rute="/brackets" >Brackets</HeaderButton> 
+                    <HeaderButton rute="/blanqueamiento" >Blanqueamientos</HeaderButton>
+                    <HeaderButton rute="/piercing" >Piercing dental</HeaderButton>
+                    <HeaderButton rute="/pacientes" >Pacientes</HeaderButton> 
+                    <HeaderButton rute="/conoceme">Conóceme</HeaderButton>
                 </nav>
             </header>
         

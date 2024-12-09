@@ -74,8 +74,8 @@ function Form() {
     };
 
     return (
-        <div className='py-1 px-0 md:px-2 h-72 bg-contrast rounded-lg  w-full mx-auto md:w-3/5 hover:opacity-90 hover:shadow-2xl shadow-black opacity-85'>
-            <form className='p-4 mx-auto w-11/12 h-80 flex flex-col justify-evenly' onSubmit={handleSubmit}>
+        <div className='py-1 px-0 md:px-2 md:py-2 xl:px-4 xl:py-3 h-72 md:h-80 xl:h-96 bg-gradient-to-br to-contrast from-primary rounded-lg  w-full m-auto md:w-3/5 hover:opacity-90 hover:shadow-2xl shadow-black opacity-95'>
+            <form className='p-4 m-auto w-11/12 h-full flex flex-col justify-center gap-2 md:gap-3 xl:gap-4' onSubmit={handleSubmit}>
                 <input
                     className='appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
                     id='nombre'

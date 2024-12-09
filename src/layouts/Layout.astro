@@ -15,15 +15,26 @@ const { title, description } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="robots" content="index, follow">
 		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 	</head>
-	<body class="max-h-screen pb-32 bg-background overflow-y-scroll">
+	<body class="max-h-screen max-w-screen min-w-screen pb-32 bg-white overflow-x-hidden overflow-y-scroll scrollbar-hide">
 		<Header />
-		<main class="max-w-5xl px-4 m-auto">
+		<main class="w-full px-4 md:px-12 lg:px-28 xl:px-32 m-auto relative">
+			<!-- Fondo con círculos animados -->
+			<div class=" absolute inset-0 -z-10 overflow-hidden">
+				<!-- Círculos con animación y colores dinámicos -->
+				<div class="circle absolute rounded-full opacity-10"><img src='/favicon.png'/></div>
+				<div class="circle absolute rounded-full opacity-30"><img src='/faviconr.png'/></div>
+				<div class="circle absolute rounded-full opacity-20"><img src='/favicon.png'/></div>
+				<div class="circle absolute rounded-full opacity-25"><img src='/faviconr.png'/></div>
+				<div class="circle absolute rounded-full opacity-15"><img src='/favicon.png'/></div>
+				<div class="circle absolute rounded-full opacity-20"><img src='/faviconr.png'/></div>
+				<div class="circle absolute rounded-full opacity-10"><img src='/favicon.png'/></div>
+			</div>
 			<slot />
 		</main>
 		<Footer />
@@ -36,4 +47,70 @@ const { title, description } = Astro.props;
 		background-size: 224px;
 		color-scheme: light dark;
 	}
+
+	/* Animación de los logos */
+	/* @keyframes float {
+		0% { transform: translate(0, 0); }
+		50% { transform: translate(20px, -30px); }
+		100% { transform: translate(0, 0); }
+	}
+
+	.circle {
+		width: 200px;
+		height: 200px;
+		animation: float 8s ease-in-out infinite;
+	} */
+
+	@keyframes swing { 0% { transform: rotate(0deg); } 50% { transform: rotate(45deg); } 100% { transform: rotate(0deg); } } .circle { width: 200px; height: 200px; animation: swing 8s ease-in-out infinite; }
+
+	/* Tamaños y posiciones específicas para los logos */
+	.circle:nth-child(1) {
+		width: 50px;
+		height: 50px;
+		top: 5%;
+		left: 90%;
+		animation-duration: 15s;
+	}
+	.circle:nth-child(2) {
+		width: 130px;
+		height: 130px;
+		top: 10%;
+		left: 3%;
+		animation-duration: 10s;
+	}
+	.circle:nth-child(4) {
+		width: 120px;
+		height: 120px;
+		top: 30%;
+		left: 85%;
+		animation-duration: 9s;
+	}
+	.circle:nth-child(6) {
+		width: 100px;
+		height: 100px;
+		top: 45%;
+		left: 20%;
+		animation-duration: 13s;
+	}
+	.circle:nth-child(5) {
+		width: 180px;
+		height: 180px;
+		top: 60%;
+		left: 80%;
+		animation-duration: 11s;
+	}
+	.circle:nth-child(3) {
+		width: 160px;
+	height: 160px;
+	top: 75%;
+	left: 6%;
+	animation-duration: 14s;
+	}
+.circle:nth-child(7) {
+	width: 50px;
+	height: 50px;
+	top: 95%;
+	left: 90%;
+	animation-duration: 15s;
+}
 </style>

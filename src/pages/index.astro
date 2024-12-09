@@ -1,44 +1,59 @@
 ---
+import AosInit from '../components/Aos.init'
 import Card from '../components/Card.astro'
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Ortodoncia La Plata" description="La Dra. Carolina Danovara, ortodoncista en La Plata, ofrece tratamientos de ortodoncia para niños y adultos, incluyendo brackets tradicionales, estéticos y alineadores. También realiza blanqueamientos y colocación de piercings dentales. Atención en dos consultorios ubicados en la ciudad.">
-	<main class="mx-auto pb-4 md:pb-8 flex-col justify-items-center pt-2 md:pt-4 mt-4 md:mt-8 ">
-		<p class="mb-2 md:mb-6 text-center text-lg text-contrast font-bold oppacity-50 cursor-none">
-			<strong class="text-contrast hover:text-primary pr-1">Vos encargate de ser feliz, </strong><strong class="text-primary hover:text-contrast"> nosotros de tu sonrisa</strong></p>
-		<p class="px-12 text-justify text-contrast font-medium">Estamos comprometidos con brindarte la mejor atención dental utilizando la más avanzada tecnología y los métodos más innovadores. Nuestro equipo de profesionales está altamente capacitado y dedicado a ofrecerte una experiencia cómoda y sin estrés.</p>
-		<div class="w-full mt-6 md:mt-12 flex flex-col items-center md:flex-row justify-around pt-4 md:pt-0 mb-12 bg-almostWhite rounded-tr-3xl">
-			<figure class="w-10/12 md:w-2/5">
-				<img
-				class="rounded-lg shadow-md"
-				src="/images/principal.webp"
-				aria-hidden="true"/>
-			</figure>
-			<div class="ml-4 py-2 oppacity-50 w-10/12 md:w-2/5 mt-8 md:mt-0">
-				<p class="mb-2 md:mb-6 text-center text-lg text-contrast font-bold oppacity-50">¡Descubre una sonrisa radiante con nuestros servicios especializados!</p>
-				<p class=" text-black oppacity-50"><span class="text-contrast font-bold">Ortodoncia :</span> Transformamos tu sonrisa con opciones como brackets metálicos, alineadores invisibles, y más.</p>
-				<p class=" text-black oppacity-50"><span class="text-contrast font-bold">Blanqueamiento Dental :</span> Devuelve el brillo a tu sonrisa de manera segura y efectiva.</p>
-				<p class=" text-black oppacity-50"><span class="text-contrast font-bold">Ortopedia Maxilar :</span> Ortodoncia en los mas chiquitos con aparatos removibles o alineadores.</p>
-				<p class=" text-black oppacity-50"><span class="text-contrast font-bold">Limpieza Dental :</span> Eliminamos placa, sarro y manchas para una salud bucal óptima.</p>
-				<p class=" text-black oppacity-50"><span class="text-contrast font-bold">Alineadores Invisibles :</span> Logra una sonrisa perfecta de manera discreta y cómoda.</p>
-				<p class="mt-2 text-black oppacity-50">Nuestro compromiso es brindarte una atención integral para que tu sonrisa sea tu mejor carta de presentación. </p>
-				<p class="mt-2 md:mt-4 text-center text-contrast font-bold oppacity-50">¡Agenda tu cita hoy!</p>
+	<AosInit client:load />
+	<main class="mx-auto flex-col justify-items-center">
+		
+		<section class="min-h-screen w-11/12 md:w-10/12  2xl:w-9/12 my-8 md:my-12 lg:my-16 xl:my-20">
+			
+			<span data-aos="fade-up" data-aos-duration="1000" class="text-center mx-auto w-full text-lg md:text-xl xl:text-2xl text-contrast uppercase">Vos encargate de ser feliz,</span> <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="text-center text-lg md:text-xl xl:text-2xl text-secondaryDark uppercase " > nosotros de tu sonrisa</span>
+
+			<p class="text-justify text-dark text-base md:text-lg xl:text-xl my-4 md:my-8 lg:my-12 xl:my-16">Estamos comprometidos con brindarte la mejor atención dental utilizando la más avanzada tecnología y los métodos más innovadores. Nuestro equipo de profesionales está altamente capacitado y dedicado a ofrecerte una experiencia cómoda y sin estrés.</p>
+
+			<div class="w-full flex flex-col items-center md:flex-row justify-between">
+				<figure class="w-11/12 md:w-[45%] hover:shadow-xl">
+					<img
+					class="rounded-lg shadow-lg"
+					src="/images/principal.webp"
+					aria-hidden="true"/>
+				</figure>
+				<div class="w-11/12 md:w-1/2 mt-4 md:mt-0">
+					<p class="mb-4 md:mb-8 text-center text-lg md:text-xl xl:text-2xl text-primary">¡Descubre una sonrisa radiante con nuestros servicios especializados!</p>
+					<p class=" text-black text-xs md:text-sm xl:text-base 2xl:text-lg "><span class="text-contrast font-medium">Ortodoncia:</span> Transformamos tu sonrisa con opciones como brackets metálicos, alineadores invisibles, y más.</p>
+					<p class=" text-black text-xs md:text-sm xl:text-base 2xl:text-lg "><span class="text-contrast font-medium">Blanqueamiento Dental:</span> Devuelve el brillo a tu sonrisa de manera segura y efectiva.</p>
+					<p class=" text-black text-xs md:text-sm xl:text-base 2xl:text-lg "><span class="text-contrast font-medium">Ortopedia Maxilar:</span> Ortodoncia en los mas chiquitos con aparatos removibles o alineadores.</p>
+					<p class=" text-black text-xs md:text-sm xl:text-base 2xl:text-lg "><span class="text-contrast font-medium">Limpieza Dental:</span> Eliminamos placa, sarro y manchas para una salud bucal óptima.</p>
+					<p class=" text-black text-xs md:text-sm xl:text-base 2xl:text-lg "><span class="text-contrast font-medium">Alineadores Invisibles:</span> Logra una sonrisa perfecta de manera discreta y cómoda.</p>
+					<p class="mt-4 text-black text-xs md:text-sm xl:text-base 2xl:text-lg ">Nuestro compromiso es brindarte una atención integral para que tu sonrisa sea tu mejor carta de presentación. </p>
+				</div>
 			</div>
-		</div>
-		<div class="flex flex-col justify-center items-center md:flex-row md:justify-between mt-6 md:mt-12 gap-2">
-			<Card title="Problemas más frecuentes que podemos corregir con ortodoncia:">
-				<p class="text-background"><stron class="font-semibold text-primaryDark">Sobremordida:</stron> Los dientes superiores cubren los inferiores en oclusión.</p>
-				<p class="text-background"><stron class="font-semibold text-primaryDark">Mordida invertida:</stron> los dientes inferiores sobresalen sobre los dientes superiores.</p>
-				<p class="text-background"><stron class="font-semibold text-primaryDark">Mordida abierta:</stron> Se da cuando existe un espacio entre los dientes anteriores superiores y los anteriores inferiores.</p>
-				<p class="text-background"><stron class="font-semibold text-primaryDark">Mordida cruzada:</stron> Uno o más dientes superiores ocluyen por dentro de los dientes inferiores.</p>
-			</Card>
-			<Card image="/images/ninos.webp" text="Con servicios especializados en ortopedia maxilar y ortodoncia, trabajamos para asegurar que cada niño tenga una sonrisa saludable y funcional.¡Cuidamos las sonrisas más importantes con amor y experiencia!"/>
-			<Card title="Problemas más frecuentes que podemos corregir con ortodoncia:">
-				<p class="text-background"><stron class="font-semibold text-primaryDark">Desviación de la línea media:</stron> El centro de los dientes superiores no coincide con el centro de los dientes inferiores.</p>
-				<p class="text-background"><stron class="font-semibold text-primaryDark">Diastemas:</stron> Se trata de espacios existentes entre los dientes que pueden provocar la aparición de enfermedades periodontales.</p>
-				<p class="text-background"><stron class="font-semibold text-primaryDark">Apiñamiento:</stron> Se da cuando no existe suficiente espacio en el maxilar y puede generar dificultades para lavarse los dientes, lo que puede derivar en caries y enfermedad de las encías.</p>
-			</Card>
-		</div>
+		</section>
+
+		<section class="min-h-screen w-11/12 md:w-10/12 2xl:w-9/12 my-8 md:my-12 lg:my-16 xl:my-20 max-w-screen">
+			<div class="flex flex-col justify-center items-center md:flex-row md:justify-between mb-4 md:mb-8 xl:mb-12 gap-2">
+				<div data-aos="fade-down">
+					<Card  title="Problemas más frecuentes que podemos corregir con ortodoncia:">
+						<p class="mb-4 text-center text-xs md:text-sm xl:text-base 2xl:text-lg text-white"><stron class="font-semibold text-primary">Sobremordida:</stron> Los dientes superiores cubren los inferiores en oclusión.</p>
+						<p class="mb-4 text-center text-xs md:text-sm xl:text-base 2xl:text-lg text-white"><stron class="font-semibold text-primary">Mordida invertida:</stron> los dientes inferiores sobresalen sobre los dientes superiores.</p>
+						<p class="mb-4 text-center text-xs md:text-sm xl:text-base 2xl:text-lg text-white"><stron class="font-semibold text-primary">Mordida abierta:</stron> Se da cuando existe un espacio entre los dientes anteriores superiores y los anteriores inferiores.</p>
+						<p class="mb-4 text-center text-xs md:text-sm xl:text-base 2xl:text-lg text-white"><stron class="font-semibold text-primary">Mordida cruzada:</stron> Uno o más dientes superiores ocluyen por dentro de los dientes inferiores.</p>
+					</Card>
+				</div>
+				<div data-aos="fade-up">
+					<Card image="/images/ninos.webp" text="Con servicios especializados en ortopedia maxilar y ortodoncia, trabajamos para asegurar que cada niño tenga una sonrisa saludable y funcional.¡Cuidamos las sonrisas más importantes con amor y experiencia!"/>
+				</div>
+				<div data-aos="fade-down">
+					<Card title="Problemas más frecuentes que podemos corregir con ortodoncia:">
+						<p class="mb-4 text-center text-xs md:text-sm xl:text-base 2xl:text-lg text-white"><stron class="font-semibold text-primary">Desviación de la línea media:</stron> El centro de los dientes superiores no coincide con el centro de los dientes inferiores.</p>
+						<p class="mb-4 text-center text-xs md:text-sm xl:text-base 2xl:text-lg text-white"><stron class="font-semibold text-primary">Diastemas:</stron> Se trata de espacios existentes entre los dientes que pueden provocar la aparición de enfermedades periodontales.</p>
+						<p class="mb-4 text-center text-xs md:text-sm xl:text-base 2xl:text-lg text-white"><stron class="font-semibold text-primary">Apiñamiento:</stron> Se da cuando no existe suficiente espacio en el maxilar y puede generar dificultades para lavarse los dientes, lo que puede derivar en caries y enfermedad de las encías.</p>
+					</Card>
+				</div>
+			</div>
+		</section>
 	</main>
 </Layout>

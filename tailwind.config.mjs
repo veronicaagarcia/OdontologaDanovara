@@ -23,5 +23,7 @@ export default {
 			  },
 		},
 	},
-	plugins: [require('flowbite/plugin')],
+	plugins: [require('flowbite/plugin'),
+		function ({ addUtilities }) { addUtilities({ '.scrollbar-hide': { /* Desactiva la barra de desplazamiento en WebKit */ '-ms-overflow-style': 'none', /* IE y Edge */ 'scrollbar-width': 'none', /* Firefox */ }, '.scrollbar-hide::-webkit-scrollbar': { 'display': 'none', /* Chrome, Safari y Opera */ }, }); },
+	],
 }
