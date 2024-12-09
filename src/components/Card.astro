@@ -8,9 +8,9 @@ const { image, title, text } = Astro.props
     
     <div class="p-2 md:p-4">
         
-        <h5 class="mb-6 text-xs md:text-sm xl:text-base 2xl:text-lg font-medium leading-none tracking-tight text-secondary underline text-center">{title}</h5>
+        <h5 class="mb-6 text-base md:text-lg xl:text-xl font-medium leading-none tracking-tight text-secondary underline text-center">{title}</h5>
         
-        <p class="mb-4 text-center text-xs md:text-sm xl:text-base text-white">{text}</p>
+        <p class="mb-4 text-center text-base md:text-lg xl:text-xl text-white">{text}</p>
         <slot/>
     </div>
 </div>
