@@ -1,65 +1,370 @@
 ---
-import Card from '../components/Card.astro'
-import Layout from '../layouts/Layout.astro'
-import AosInit from '../components/Aos.init'
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+import AosInit from "../components/Aos.init";
 ---
 
-<Layout title="Ortodoncia La Plata | Blanqueamientos" description="Recupera la blancura de tu sonrisa con blanqueamientos dentales en La Plata con la Dra. Carolina Danovara. Tratamientos seguros y efectivos para niños y adultos. Descubre cómo un blanqueamiento dental puede mejorar tu estética dental de forma rápida y duradera.">
-	<AosInit client:load />
-    <main class="mx-auto flex-col justify-items-center">
+<Layout
+  title="Ortodoncia La Plata | Blanqueamientos"
+  description="Recupera la blancura de tu sonrisa con blanqueamientos dentales en La Plata con la Dra. Carolina Danovara. Tratamientos seguros y efectivos para niños y adultos. Descubre cómo un blanqueamiento dental puede mejorar tu estética dental de forma rápida y duradera."
+>
+  <AosInit client:load />
+  <main class="pt-8 pb-16">
+    <!-- Hero Section -->
+    <section class="relative py-12 sm:py-16">
+      <div class="text-center space-y-6 max-w-4xl mx-auto">
+        <!-- Main heading -->
+        <h1
+          data-aos="fade-up"
+          class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-serif leading-tight"
+        >
+          Blanqueamiento <span class="text-primary-600">Dental</span>
+        </h1>
 
-        <section class="min-h-screen w-11/12 md:w-10/12 2xl:w-9/12 mx-auto my-8 md:my-12 lg:my-16 xl:my-20 justify-items-center">
-			
-			<h2 class="text-center text-lg md:text-xl xl:text-2xl text-contrast w-full uppercase">Blanqueamiento Dental</h2>
+        <!-- Subtitle -->
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-xl sm:text-2xl text-secondary-600 font-serif"
+        >
+          Recupera el Brillo de tu Sonrisa
+        </h2>
 
-            <section class="my-8 md:my-12 lg:my-16 xl:my-20">
-                <div class="flex flex-col justify-center items-center mb-4 md:mb-8 xl:mb-12 gap-2">
-                    <div data-aos="slide-up" class="text-dark text-center flex flex-col md:flex-row md:justify-between md:w-full ">
-                        <div class="flex flex-col w-full md:w-[45%]"> 
+        <!-- Description -->
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="text-base sm:text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto"
+        >
+          Ofrecemos tratamientos avanzados de blanqueamiento dental para que
+          puedas lucir una sonrisa más blanca y radiante. Nuestro objetivo es
+          proporcionar resultados efectivos de manera segura y cómoda.
+        </p>
+      </div>
+    </section>
 
-                            <div class="w-full" data-aos="fade-up" data-aos-duration="1000">
-    
-                                <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">Recupera el Brillo de tu Sonrisa</p>
-                                <p class="mb-4 text-start text-black text-base md:text-lg xl:text-xl">Ofrecemos tratamientos avanzados de blanqueamiento dental para que puedas lucir una sonrisa más blanca y radiante. Nuestro objetivo es proporcionar resultados efectivos de manera segura y cómoda.</p>      
-                            </div>
-                            <div class="w-full " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-    
-                                <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">¿Qué es el Blanqueamiento Dental?</p>         
-                                <p class="mb-4 text-start text-black text-base md:text-lg xl:text-xl">El blanqueamiento dental es un procedimiento estético que elimina manchas y decoloraciones de los dientes, devolviéndoles su brillo natural. Es ideal para aquellos que buscan mejorar la apariencia de su sonrisa de manera rápida y efectiva.</p>    
-                            </div>
-                        </div>
-                        <div class="w-full md:w-[50%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">Nuestro Proceso de Blanqueamiento:</p> 
-    
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Consulta Inicial:</strong> La salud de tus dientes y encías para asegurarnos de que el blanqueamiento es adecuado para ti.</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Limpieza con Ultrasonido:</strong> Antes de comenzar el blanqueamiento, realizamos una limpieza profunda utilizando tecnología de ultrasonido. Este método elimina la placa y el sarro de manera efectiva, preparando tus dientes para un blanqueamiento uniforme.</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Tratamiento de Blanqueamiento:</strong> Utilizamos productos de alta calidad y técnicas avanzadas para garantizar resultados óptimos. Nuestros tratamientos pueden realizarse en el consultorio o con kits personalizados para uso en casa (tratamiento ambulatorio).</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Seguimiento y Cuidado:</strong> Te proporcionamos recomendaciones para mantener los resultados y asegurar que tu sonrisa se mantenga brillante por más tiempo.</p>
-                        </div>
-                    </div>
-                    <div data-aos="slide-up" class="text-dark text-center mt-4 md:mt-8 xl:mt-12 2xl:mt-20">
-
-                        <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-secondaryDark">Beneficios del Blanqueamiento Dental </p> 
-
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Resultados Visibles Rápidamente:</strong> Muchas veces, notarás una diferencia significativa en una sola sesión.</p>
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Seguridad y Comodidad:</strong> Utilizamos productos y técnicas que minimizan la sensibilidad dental y protegen tus encías.</p> 
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Soluciones Personalizadas:</strong> Adaptamos el tratamiento a tus necesidades específicas para asegurar la máxima efectividad.</p>
-                    </div>
-                </div> 
-            </section>
-        </section>
-
-        <section class="h-fit mx-auto w-11/12 md:w-10/12  2xl:w-9/12 my-8 md:my-12 lg:my-16 xl:my-20">
-			<div class="flex flex-col justify-center items-center  md:justify-between md:flex-row mb-4 md:mb-8 xl:mb-12 gap-2">
-				<div data-aos="fade-up">
-                    <Card image="/images/blanqueamiento.webp" text="La enfermedad gingival es causada por la acumulación de placa bacteriana. Esta suele depocitarse formando el cálculo o sarro que no es posible eliminar con el cepillado. Si no se elimina se puede acumular alrededor o incluso debajo de la encía, provocando el avance de la enfermedad gingival. ¿Tiene solución? Por supuesto, con una limpieza dental con ultrasonido. ¿Ya realizaste tu control?"/>
-                </div>
-
-                <div data-aos="fade-down">
-                    <Card image="/images/blanqueamiento2.webp" text="¡Cuida tu sonrisa con amor y atención diaria!"/>
-                </div>
+    <!-- Information Section -->
+    <section class="py-12 bg-gradient-to-br from-neutral-50 to-white">
+      <div class="space-y-12">
+        <!-- Section content -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start"
+        >
+          <!-- Left Column -->
+          <div class="space-y-8">
+            <!-- What is it -->
+            <div data-aos="fade-up" class="space-y-4">
+              <h3
+                class="text-xl sm:text-2xl font-bold text-neutral-900 font-serif text-primary-600"
+              >
+                ¿Qué es el Blanqueamiento Dental?
+              </h3>
+              <p class="text-neutral-700 leading-relaxed">
+                El blanqueamiento dental es un procedimiento estético que
+                elimina manchas y decoloraciones de los dientes, devolviéndoles
+                su brillo natural. Es ideal para aquellos que buscan mejorar la
+                apariencia de su sonrisa de manera rápida y efectiva.
+              </p>
             </div>
-		</section>
-	</main>
+
+            <!-- Benefits -->
+            <div data-aos="fade-up" data-aos-delay="200" class="space-y-4">
+              <h3
+                class="text-xl sm:text-2xl font-bold text-neutral-900 font-serif text-secondary-600"
+              >
+                Beneficios del Blanqueamiento Dental
+              </h3>
+              <div class="space-y-3">
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="flex-shrink-0 w-2 h-2 bg-secondary-500 rounded-full mt-2"
+                  >
+                  </div>
+                  <div>
+                    <p class="font-semibold text-neutral-900">
+                      Resultados Visibles Rápidamente:
+                    </p>
+                    <p class="text-sm text-neutral-600">
+                      Muchas veces, notarás una diferencia significativa en una
+                      sola sesión.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="flex-shrink-0 w-2 h-2 bg-secondary-500 rounded-full mt-2"
+                  >
+                  </div>
+                  <div>
+                    <p class="font-semibold text-neutral-900">
+                      Seguridad y Comodidad:
+                    </p>
+                    <p class="text-sm text-neutral-600">
+                      Utilizamos productos y técnicas que minimizan la
+                      sensibilidad dental y protegen tus encías.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="flex-shrink-0 w-2 h-2 bg-secondary-500 rounded-full mt-2"
+                  >
+                  </div>
+                  <div>
+                    <p class="font-semibold text-neutral-900">
+                      Soluciones Personalizadas:
+                    </p>
+                    <p class="text-sm text-neutral-600">
+                      Adaptamos el tratamiento a tus necesidades específicas
+                      para asegurar la máxima efectividad.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div
+                    class="flex-shrink-0 w-2 h-2 bg-secondary-500 rounded-full mt-2"
+                  >
+                  </div>
+                  <div>
+                    <p class="font-semibold text-neutral-900">
+                      Procedimiento No Invasivo:
+                    </p>
+                    <p class="text-sm text-neutral-600">
+                      No requiere anestesia ni modificación de la estructura
+                      dental.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column - Process -->
+          <div data-aos="fade-up" data-aos-delay="400" class="space-y-4">
+            <h3
+              class="text-xl sm:text-2xl font-bold text-neutral-900 font-serif text-primary-600"
+            >
+              Nuestro Proceso de Blanqueamiento
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-bold"
+                >
+                  1
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Consulta Inicial:
+                  </p>
+                  <p class="text-sm text-neutral-600 mt-1">
+                    Evaluamos la salud de tus dientes y encías para asegurarnos
+                    de que el blanqueamiento es adecuado para ti.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-bold"
+                >
+                  2
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Limpieza con Ultrasonido:
+                  </p>
+                  <p class="text-sm text-neutral-600 mt-1">
+                    Antes de comenzar el blanqueamiento, realizamos una limpieza
+                    profunda utilizando tecnología de ultrasonido. Este método
+                    elimina la placa y el sarro de manera efectiva, preparando
+                    tus dientes para un blanqueamiento uniforme.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-bold"
+                >
+                  3
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Tratamiento de Blanqueamiento:
+                  </p>
+                  <p class="text-sm text-neutral-600 mt-1">
+                    Utilizamos productos de alta calidad y técnicas avanzadas
+                    para garantizar resultados óptimos. Nuestros tratamientos
+                    pueden realizarse en el consultorio o con kits
+                    personalizados para uso en casa (tratamiento ambulatorio).
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-8 h-8 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center text-sm font-bold"
+                >
+                  4
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Seguimiento y Cuidado:
+                  </p>
+                  <p class="text-sm text-neutral-600 mt-1">
+                    Te proporcionamos recomendaciones para mantener los
+                    resultados y asegurar que tu sonrisa se mantenga brillante
+                    por más tiempo.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Types and Results Section -->
+    <section class="py-12">
+      <div class="space-y-12">
+        <!-- Section header -->
+        <div class="text-center space-y-4 max-w-3xl mx-auto">
+          <h2
+            data-aos="fade-up"
+            class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+          >
+            Cuidado Integral de tu <span class="text-primary-600">Sonrisa</span>
+          </h2>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <!-- Prevention Card -->
+          <div data-aos="fade-up">
+            <Card
+              image="/images/blanqueamiento.webp"
+              title="Prevención y Mantenimiento"
+              text="La enfermedad gingival es causada por la acumulación de placa bacteriana. Esta suele depositarse formando el cálculo o sarro que no es posible eliminar con el cepillado. Si no se elimina se puede acumular alrededor o incluso debajo de la encía, provocando el avance de la enfermedad gingival. ¿Tiene solución? Por supuesto, con una limpieza dental con ultrasonido. ¿Ya realizaste tu control?"
+            />
+          </div>
+
+          <!-- Care Card -->
+          <div data-aos="fade-up" data-aos-delay="200">
+            <Card
+              image="/images/blanqueamiento2.webp"
+              title="Cuidado Diario"
+              text="¡Cuida tu sonrisa con amor y atención diaria! Mantener una buena higiene oral es fundamental para preservar los resultados del blanqueamiento y asegurar una sonrisa saludable y radiante por más tiempo."
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Info Section -->
+    <section class="py-12 bg-gradient-to-br from-neutral-50 to-white">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <!-- Content -->
+        <div data-aos="fade-right" class="space-y-6">
+          <h3
+            class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+          >
+            ¿Quién es Candidato para <span class="text-primary-600"
+              >Blanqueamiento</span
+            >?
+          </h3>
+
+          <div class="space-y-4 text-neutral-700">
+            <p class="leading-relaxed">
+              El blanqueamiento dental es seguro y efectivo para la mayoría de
+              las personas, pero es importante que un profesional evalúe tu caso
+              particular para determinar el mejor tratamiento.
+            </p>
+
+            <div class="space-y-3">
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"
+                >
+                </div>
+                <p>
+                  <strong class="text-green-600">Ideal para:</strong> Personas con
+                  dientes manchados por café, té, vino o tabaco.
+                </p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"
+                >
+                </div>
+                <p>
+                  <strong class="text-green-600">Perfecto si:</strong> Tienes dientes
+                  sanos y encías en buen estado.
+                </p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-yellow-500 rounded-full mt-2"
+                >
+                </div>
+                <p>
+                  <strong class="text-yellow-600">Consulta necesaria:</strong> Si
+                  tienes empastes, coronas o sensibilidad dental.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+              <p class="text-blue-800 font-medium">
+                <strong>Importante:</strong> Realizamos una evaluación completa antes
+                del tratamiento para asegurar los mejores resultados y tu seguridad.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div data-aos="fade-left">
+          <img
+            class="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full"
+            src="/images/blanqueamiento2.webp"
+            alt="Resultado de blanqueamiento dental"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12">
+      <div
+        class="relative rounded-2xl bg-gradient-to-br from-secondary-500 to-primary-500 overflow-hidden p-8"
+      >
+        <div class="relative text-center text-white space-y-6">
+          <h2 class="text-2xl sm:text-3xl font-bold font-serif">
+            ¿Listo para una Sonrisa más Brillante?
+          </h2>
+          <p class="text-base sm:text-lg opacity-90 max-w-2xl mx-auto">
+            El blanqueamiento dental puede transformar tu sonrisa en una sola
+            sesión. Agenda tu consulta y descubre cómo podemos devolverle el
+            brillo natural a tus dientes.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
+          >
+            <a
+              href="/turnos"
+              class="bg-white text-secondary-600 hover:bg-neutral-100 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Solicitar Consulta
+            </a>
+            <a
+              href="https://wa.me/5492214085498"
+              target="_blank"
+              class="border-2 border-white text-white hover:bg-white hover:text-secondary-600 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              WhatsApp: 221 408-5498
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>

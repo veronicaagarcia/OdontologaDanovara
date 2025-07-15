@@ -1,184 +1,309 @@
 <footer
-  class="bg-contrast opacity-95 text-white py-3 md:p-6 lg:p-10 w-full h-fit"
+  class="relative bg-gradient-to-br from-black via-neutral-800 to-black text-white mt-16"
 >
-  <div class="container mx-auto px-4 md:px-8">
-    <div class="flex flex-wrap justify-between py-4">
-      <div class="w-full sm:w-1/2 md:w-1/5 mb-4">
-        <h2 class="text-base font-semibold mb-3">Enlaces Rápidos</h2>
-        <ul class="text-sm md:text-base">
-          <li>
-            <a href="/" class="text-white hover:text-secondary"> Inicio </a>
-          </li>
-          <li>
-            <a href="/alineadores" class="text-white hover:text-secondary">
-              Alineadores
+  <!-- Decorative top border -->
+  <div
+    class="absolute blur-sm top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-500 via-secondary-500 to-primary-500"
+  >
+  </div>
+
+  <div class="relative">
+    <!-- Main footer content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Brand section -->
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <img
+              class="h-8 w-8"
+              src="/favicon.png"
+              alt="Logo Ortodoncia Danovara"
+            />
+            <h3 class="text-lg font-bold font-serif">
+              Ortodoncia <span class="text-primary-400">Carolina Danovara</span>
+            </h3>
+          </div>
+
+          <p class="text-neutral-300 text-sm leading-relaxed">
+            Especialistas en crear sonrisas perfectas. Con más de 10 años de
+            experiencia, transformamos vidas a través de tratamientos de
+            ortodoncia personalizados.
+          </p>
+
+          <!-- Professional info -->
+          <div class="space-y-2 text-sm">
+            <div class="flex items-center space-x-2 text-neutral-300">
+              <svg
+                class="w-4 h-4 text-primary-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <span>Ortodoncista certificada UNLP</span>
+            </div>
+            <div class="flex items-center space-x-2 text-neutral-300">
+              <svg
+                class="w-4 h-4 text-primary-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                ></path>
+              </svg>
+              <span>MP: 14799 - NARP: 06/20</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold text-white">Navegación</h4>
+          <nav class="grid grid-cols-2 gap-2 text-sm">
+            <a href="/" class="footer-link">Inicio</a>
+            <a href="/alineadores" class="footer-link">Alineadores</a>
+            <a href="/brackets" class="footer-link">Brackets</a>
+            <a href="/blanqueamiento" class="footer-link">Blanqueamientos</a>
+            <a href="/piercing" class="footer-link">Piercing Dental</a>
+            <a href="/pacientes" class="footer-link">Pacientes</a>
+            <a href="/conoceme" class="footer-link">Conóceme</a>
+            <a href="/turnos" class="footer-link text-primary-400 font-medium"
+              >Turnos</a
+            >
+          </nav>
+        </div>
+
+        <!-- Contact info -->
+        <div class="space-y-4">
+          <h4 class="text-lg font-semibold text-white">Contacto</h4>
+
+          <div class="space-y-3 text-sm">
+            <!-- WhatsApp -->
+            <a
+              href="https://wa.me/5492214085498"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center space-x-3 p-3 rounded-lg bg-neutral-800/50 hover:bg-green-500/20 border border-transparent hover:border-green-500/30 transition-all duration-300"
+            >
+              <div
+                class="flex-shrink-0 p-2 rounded-lg bg-green-500/20 group-hover:bg-green-500/30 transition-colors"
+              >
+                <svg
+                  class="w-4 h-4 text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.087z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-medium">WhatsApp</p>
+                <p class="text-green-400 text-xs">+54 9 221 408-5498</p>
+              </div>
             </a>
-          </li>
-          <li>
-            <a href="/brackets" class="text-white hover:text-secondary">
-              Brackets
+
+            <!-- Email -->
+            <a
+              href="mailto:carolina.danovara@hotmail.com"
+              class="group flex items-center space-x-3 p-3 rounded-lg bg-neutral-800/50 hover:bg-blue-500/20 border border-transparent hover:border-blue-500/30 transition-all duration-300"
+            >
+              <div
+                class="flex-shrink-0 p-2 rounded-lg bg-blue-500/20 group-hover:bg-blue-500/30 transition-colors"
+              >
+                <svg
+                  class="w-4 h-4 text-blue-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-medium">Email</p>
+                <p class="text-blue-400 text-xs break-all">
+                  carolina.danovara@hotmail.com
+                </p>
+              </div>
             </a>
-          </li>
-          <li>
-            <a href="/blanqueamiento" class="text-white hover:text-secondary">
-              Blanqueamientos
+
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/ortodoncia.cd/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-center space-x-3 p-3 rounded-lg bg-neutral-800/50 hover:bg-pink-500/20 border border-transparent hover:border-pink-500/30 transition-all duration-300"
+            >
+              <div
+                class="flex-shrink-0 p-2 rounded-lg bg-gradient-to-br from-pink-100/20 to-orange-100/20 group-hover:from-pink-200/30 group-hover:to-orange-200/30 transition-colors"
+              >
+                <svg
+                  class="w-4 h-4 text-pink-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  ></path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-white font-medium">Instagram</p>
+                <p class="text-pink-400 text-xs">@ortodoncia.cd</p>
+              </div>
             </a>
-          </li>
-          <li>
-            <a href="/piercing" class="text-white hover:text-secondary">
-              Piercing dental
-            </a>
-          </li>
-          <li>
-            <a href="/pacientes" class="text-white hover:text-secondary">
-              Pacientes
-            </a>
-          </li>
-          <li>
-            <a href="/conoceme" class="text-white hover:text-secondary">
-              Conóceme
-            </a>
-          </li>
-          <li>
-            <a href="/turnos" class="text-white hover:text-secondary">
-              Turnos
-            </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="w-full sm:w-1/2 md:w-1/5 mb-4">
-        <h2 class="text-base font-semibold mb-3">Ubicación</h2>
-        <p class="text-white text-xs flex items-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin pr-1"
-            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-              d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path><path
-              d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-            ></path></svg
-          >
-          <p class="text-sm">Calle 10 n°1489, casi esquina 63</p>
-          <p class="text-white text-sm flex items-center mb-2">
-            Jueves de 15hs a 19hs
-          </p>
-        </p>
-        <p class="text-white flex items-center text-xs">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin pr-1"
-            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-              d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path><path
-              d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
-            ></path></svg
-          >
-          <p class="text-sm">Calle 17 n°840, e/ 48 y 49</p>
-          <p class="text-white text-sm flex items-center">
-            Martes viernes de 15hs a 19hs
-          </p>
-        </p>
-      </div>
+      <!-- Locations -->
+      <div class="mt-12 pt-8 border-t border-neutral-700">
+        <h4 class="text-lg font-semibold text-white mb-6">
+          Nuestros Consultorios
+        </h4>
 
-      <div class="w-full sm:w-1/2 md:w-1/4 mb-4">
-        <h2 class="text-base font-semibold mb-3">Contacto</h2>
-        <a
-          href="https://wa.me/5492214085498"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex text-white mb-2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp hover:scale-110 hover:drop-shadow-lg"
-            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-              d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path><path
-              d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
-            ></path></svg
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Location 1 -->
+          <div
+            class="p-4 rounded-xl bg-neutral-800/50 border border-neutral-700"
           >
-          <p class="text-white text-sm flex items-center ml-2">
-            +5492214085498
-          </p>
-        </a>
-        <a
-          href="https://www.instagram.com/ortodoncia.cd/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="flex text-white mb-2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram hover:scale-110 hover:drop-shadow-lg"
-            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
-              d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
-            ></path><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"
-            ></path><path d="M16.5 7.5l0 .01"></path></svg
+            <div class="flex items-start space-x-3">
+              <div class="flex-shrink-0 p-2 rounded-lg bg-primary-500/20">
+                <svg
+                  class="w-5 h-5 text-primary-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657l-4.243 4.243a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div class="flex-1 text-sm">
+                <h5 class="text-white font-semibold">Consultorio Centro</h5>
+                <p class="text-neutral-300 mt-1">
+                  Calle 17 n°840, entre 48 y 49
+                </p>
+                <p class="text-neutral-300">La Plata, Buenos Aires</p>
+                <div class="mt-2">
+                  <span class="text-primary-400 font-medium"
+                    >Martes y Viernes: 15:00 - 19:00 hs</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location 2 -->
+          <div
+            class="p-4 rounded-xl bg-neutral-800/50 border border-neutral-700"
           >
-          <p class="text-white text-sm flex items-center ml-2">
-            @ortodoncia.cd
-          </p>
-        </a>
-        <a
-          href="mailto:carolina.danovara@hotmail.com"
-          class="flex text-white mb-2"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-mail hover:scale-110 hover:drop-shadow-lg"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-            <polyline points="3 7 12 13 21 7"></polyline>
-          </svg>
-          <p class="text-white text-sm flex items-center ml-2">
-            carolina.danovara@hotmail.com
-          </p>
-        </a>
+            <div class="flex items-start space-x-3">
+              <div class="flex-shrink-0 p-2 rounded-lg bg-secondary-500/20">
+                <svg
+                  class="w-5 h-5 text-secondary-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657l-4.243 4.243a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div class="flex-1 text-sm">
+                <h5 class="text-white font-semibold">Consultorio Zona Sur</h5>
+                <p class="text-neutral-300 mt-1">
+                  Calle 10 n°1489, casi esquina 63
+                </p>
+                <p class="text-neutral-300">La Plata, Buenos Aires</p>
+                <div class="mt-2">
+                  <span class="text-secondary-400 font-medium"
+                    >Jueves: 15:00 - 19:00 hs</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="mt-2 border-t border-footerLine pt-2 text-center">
-      <p class="text-xs pt-4">
-        © 2024 Ortodoncia Carolina Danovara. Todos los derechos reservados.
-      </p>
+
+    <!-- Bottom section -->
+    <div class="border-t border-neutral-700 bg-neutral-900/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-sm"
+        >
+          <!-- Copyright -->
+          <div class="text-center md:text-left">
+            <p class="text-neutral-400">
+              © Ortodoncia Carolina Danovara. Todos los derechos reservados.
+            </p>
+            <p class="text-neutral-500 text-xs mt-1">
+              Diseñando sonrisas perfectas 😁
+            </p>
+          </div>
+
+          <!-- Quick actions -->
+          <div class="flex items-center space-x-4">
+            <a
+              href="/turnos"
+              class="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 text-sm"
+            >
+              Solicitar Turno
+            </a>
+            <a
+              href="https://wa.me/5492214085498"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border border-neutral-600 text-neutral-300 hover:border-green-500 hover:text-green-400 px-4 py-2 rounded-lg transition-all duration-300 text-sm"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
+
+<style>
+  .footer-link {
+    @apply text-neutral-300 hover:text-primary-400 transition-colors duration-200 py-1;
+  }
+</style>

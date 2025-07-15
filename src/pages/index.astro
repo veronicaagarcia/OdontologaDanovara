@@ -1,61 +1,450 @@
 ---
-import AosInit from '../components/Aos.init'
-import Card from '../components/Card.astro'
-import Layout from '../layouts/Layout.astro'
+import AosInit from "../components/Aos.init";
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Ortodoncia La Plata" description="La Dra. Carolina Danovara, ortodoncista en La Plata, ofrece tratamientos de ortodoncia para niños y adultos, incluyendo brackets tradicionales, estéticos y alineadores. También realiza blanqueamientos y colocación de piercings dentales. Atención en dos consultorios ubicados en la ciudad.">
-	<AosInit client:load />
-	<main class="mx-auto flex-col justify-items-center">
-		
-		<section class="min-h-screen w-11/12 md:w-10/12 mx-auto 2xl:w-9/12 my-8 md:my-12 lg:my-16 xl:my-20">
-			<p class="text-center">
+<Layout
+  title="Ortodoncia La Plata"
+  description="La Dra. Carolina Danovara, ortodoncista en La Plata, ofrece tratamientos de ortodoncia para niños y adultos, incluyendo brackets tradicionales, estéticos y alineadores. También realiza blanqueamientos y colocación de piercings dentales. Atención en dos consultorios ubicados en la ciudad."
+>
+  <AosInit client:load />
 
-				<span data-aos="fade-up" data-aos-duration="1000" class="text-center mx-auto w-full text-lg md:text-xl xl:text-2xl text-contrast uppercase">Vos encargate de ser feliz,</span> <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" class="text-center text-lg md:text-xl xl:text-2xl text-secondaryDark uppercase " > nosotros de tu sonrisa</span>
-			</p>
+  <main class="overflow-hidden">
+    <!-- Hero Section -->
+    <section class="relative py-16 sm:py-20 lg:py-24">
+      <div class="text-center space-y-8 max-w-4xl mx-auto">
+        <!-- Main heading -->
+        <div class="space-y-4">
+          <h1
+            data-aos="fade-up"
+            data-aos-delay="0"
+            class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-serif leading-tight relative"
+          >
+            Vos encárgate de ser <span class="text-primary-600">feliz</span>
+          </h1>
 
-			<p class="text-justify text-dark text-base md:text-lg xl:text-xl mt-4 md:mt-8 lg:mt-12 xl:mt-16">Estamos comprometidos con brindarte la mejor atención dental utilizando la más avanzada tecnología y los métodos más innovadores. Nuestro equipo de profesionales está altamente capacitado y dedicado a ofrecerte una experiencia cómoda y sin estrés.</p>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="400"
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold text-secondary-600 font-serif leading-tight"
+          >
+            nosotros de tu
+            <span class="inline-block relative group">
+              <span class="text-secondary-600">sonrisa</span>
+              <span
+                class="absolute left-0 bottom-0 w-full h-[2px] bg-secondary-600 scale-x-0 opacity-0 group-[.underline-active]:scale-x-100 group-[.underline-active]:opacity-100 transition-transform duration-500 delay-700 origin-left"
+              ></span>
+            </span>
+          </p>
+        </div>
 
-			<div class="w-full flex flex-col items-center md:flex-row justify-between">
-				<figure class="w-11/12 md:w-[45%] hover:shadow-xl">
-					<img
-					class="rounded-lg shadow-lg"
-					src="/images/principal.webp"
-					aria-hidden="true"/>
-				</figure>
-				<div class="w-11/12 md:w-1/2 mt-4 md:mt-0">
-					<p class="mb-4 md:mb-8 text-center text-lg md:text-xl xl:text-2xl text-primary">¡Descubre una sonrisa radiante con nuestros servicios especializados!</p>
-					<p class=" text-black text-base md:text-lg xl:text-xl "><span class="text-contrast font-medium">Ortodoncia:</span> Transformamos tu sonrisa con opciones como brackets metálicos, alineadores invisibles, y más.</p>
-					<p class=" text-black text-base md:text-lg xl:text-xl "><span class="text-contrast font-medium">Blanqueamiento Dental:</span> Devuelve el brillo a tu sonrisa de manera segura y efectiva.</p>
-					<p class=" text-black text-base md:text-lg xl:text-xl "><span class="text-contrast font-medium">Ortopedia Maxilar:</span> Ortodoncia en los mas chiquitos con aparatos removibles o alineadores.</p>
-					<p class=" text-black text-base md:text-lg xl:text-xl "><span class="text-contrast font-medium">Limpieza Dental:</span> Eliminamos placa, sarro y manchas para una salud bucal óptima.</p>
-					<p class=" text-black text-base md:text-lg xl:text-xl "><span class="text-contrast font-medium">Alineadores Invisibles:</span> Logra una sonrisa perfecta de manera discreta y cómoda.</p>
-					<p class="mt-4 text-black text-base md:text-lg xl:text-xl ">Nuestro compromiso es brindarte una atención integral para que tu sonrisa sea tu mejor carta de presentación. </p>
-				</div>
-			</div>
-		</section>
+        <!-- Description -->
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="text-base sm:text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto"
+        >
+          Estamos comprometidos con brindarte la mejor atención dental
+          utilizando la más avanzada tecnología y los métodos más innovadores.
+          Nuestro equipo de profesionales está altamente capacitado y dedicado a
+          ofrecerte una experiencia cómoda y sin estrés.
+        </p>
 
-		<section class="h-fit w-11/12 md:w-10/12 2xl:w-9/12 mb-8 md:mb-12 lg:mb-16 xl:mb-20 max-w-screen">
-			<div class="flex flex-col justify-center items-center md:flex-row md:justify-between mb-4 md:mb-8 xl:mb-12 gap-2">
-				<div data-aos="fade-down">
-					<Card  title="Problemas más frecuentes que podemos corregir con ortodoncia:">
-						<p class="mb-4 text-center text-base md:text-lg xl:text-xl text-white"><stron class="font-semibold text-primary">Sobremordida:</stron> Los dientes superiores cubren los inferiores en oclusión.</p>
-						<p class="mb-4 text-center text-base md:text-lg xl:text-xl text-white"><stron class="font-semibold text-primary">Mordida invertida:</stron> los dientes inferiores sobresalen sobre los dientes superiores.</p>
-						<p class="mb-4 text-center text-base md:text-lg xl:text-xl text-white"><stron class="font-semibold text-primary">Mordida abierta:</stron> Se da cuando existe un espacio entre los dientes anteriores superiores y los anteriores inferiores.</p>
-						<p class="mb-4 text-center text-base md:text-lg xl:text-xl text-white"><stron class="font-semibold text-primary">Mordida cruzada:</stron> Uno o más dientes superiores ocluyen por dentro de los dientes inferiores.</p>
-					</Card>
-				</div>
-				<div data-aos="fade-up">
-					<Card image="/images/ninos.webp" text="Con servicios especializados en ortopedia maxilar y ortodoncia, trabajamos para asegurar que cada niño tenga una sonrisa saludable y funcional.¡Cuidamos las sonrisas más importantes con amor y experiencia!"/>
-				</div>
-				<div data-aos="fade-down">
-					<Card title="Problemas más frecuentes que podemos corregir con ortodoncia:">
-						<p class="mb-4 text-center text-base md:text-lg xl:text-xl text-white"><stron class="font-semibold text-primary">Desviación de la línea media:</stron> El centro de los dientes superiores no coincide con el centro de los dientes inferiores.</p>
-						<p class="mb-4 text-center text-base md:text-lg xl:text-xl text-white"><stron class="font-semibold text-primary">Diastemas:</stron> Se trata de espacios existentes entre los dientes que pueden provocar la aparición de enfermedades periodontales.</p>
-						<p class="mb-4 text-center text-base md:text-lg xl:text-xl text-white"><stron class="font-semibold text-primary">Apiñamiento:</stron> Se da cuando no existe suficiente espacio en el maxilar y puede generar dificultades para lavarse los dientes, lo que puede derivar en caries y enfermedad de las encías.</p>
-					</Card>
-				</div>
-			</div>
-		</section>
-	</main>
+        <!-- CTA Buttons -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="flex flex-col sm:flex-row gap-4 justify-center"
+        >
+          <a
+            href="/turnos"
+            class="bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center"
+          >
+            <svg
+              class="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              ></path>
+            </svg>
+            Solicitar Consulta
+          </a>
+          <a
+            href="https://wa.me/5492214085498"
+            target="_blank"
+            class="border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center"
+          >
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.087z"
+              ></path>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+
+        <!-- Trust indicators -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          class="flex flex-wrap items-center justify-center gap-6 pt-8 text-sm text-neutral-500"
+        >
+          <div class="flex items-center space-x-2">
+            <svg
+              class="w-5 h-5 text-primary-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>Ortodoncista Certificada</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg
+              class="w-5 h-5 text-secondary-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>300+ Pacientes Felices</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <svg
+              class="w-5 h-5 text-primary-500"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <span>10+ Años de Experiencia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Introduction -->
+    <section class="py-12 sm:py-16 bg-gradient-to-br from-neutral-50 to-white">
+      <div class="space-y-12">
+        <!-- Section header -->
+        <div class="text-center space-y-4 max-w-3xl mx-auto">
+          <h2
+            data-aos="fade-up"
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900 font-serif leading-tight"
+          >
+            ¡Descubre una Sonrisa
+            <span class="text-primary-600">Radiante</span>!
+          </h2>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="text-base sm:text-lg text-neutral-600 leading-relaxed"
+          >
+            Ofrecemos servicios especializados con tecnología de vanguardia para
+            transformar tu sonrisa de manera segura y efectiva.
+          </p>
+        </div>
+
+        <!-- Services intro with image -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
+        >
+          <div>
+            <img
+              class="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              src="/images/principal.webp"
+              alt="Consultorio de ortodoncia"
+              loading="lazy"
+            />
+          </div>
+          <div class="space-y-6">
+            <h3
+              class="text-xl sm:text-2xl font-bold text-neutral-900 font-serif"
+            >
+              Atención integral personalizada
+            </h3>
+            <div class="space-y-4 text-neutral-700">
+              <p class="flex items-start space-x-3">
+                <span
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                ></span>
+                <span
+                  ><strong class="text-primary-600">Ortodoncia:</strong> Transformamos
+                  tu sonrisa con opciones como brackets metálicos, alineadores invisibles,
+                  y más.</span
+                >
+              </p>
+              <p class="flex items-start space-x-3">
+                <span
+                  class="flex-shrink-0 w-2 h-2 bg-secondary-500 rounded-full mt-2"
+                ></span>
+                <span
+                  ><strong class="text-secondary-600"
+                    >Blanqueamiento Dental:</strong
+                  > Devuelve el brillo a tu sonrisa de manera segura y efectiva.</span
+                >
+              </p>
+              <p class="flex items-start space-x-3">
+                <span
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                ></span>
+                <span
+                  ><strong class="text-primary-600">Ortopedia Maxilar:</strong> Ortodoncia
+                  en los más chiquitos con aparatos removibles o alineadores.</span
+                >
+              </p>
+              <p class="flex items-start space-x-3">
+                <span
+                  class="flex-shrink-0 w-2 h-2 bg-secondary-500 rounded-full mt-2"
+                ></span>
+                <span
+                  ><strong class="text-secondary-600">Limpieza Dental:</strong> Eliminamos
+                  placa, sarro y manchas para una salud bucal óptima.</span
+                >
+              </p>
+              <p class="flex items-start space-x-3">
+                <span
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                ></span>
+                <span
+                  ><strong class="text-primary-600"
+                    >Alineadores Invisibles:</strong
+                  > Logra una sonrisa perfecta de manera discreta y cómoda.</span
+                >
+              </p>
+            </div>
+            <p
+              class="text-neutral-800 font-medium border-l-4 border-primary-500 pl-4 italic"
+            >
+              Nuestro compromiso es brindarte una atención integral para que tu
+              sonrisa sea tu mejor carta de presentación.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problems Section - Layout Mejorado -->
+    <section class="py-12 sm:py-16">
+      <div class="space-y-12">
+        <!-- Section header -->
+        <div class="text-center space-y-4 max-w-3xl mx-auto">
+          <h2
+            data-aos="fade-up"
+            class="text-2xl sm:text-3xl lg:text-4xl font-bold text-neutral-900 font-serif leading-tight"
+          >
+            Problemas Más Frecuentes que
+            <span class="text-primary-600">Podemos Corregir</span>
+          </h2>
+        </div>
+
+        <!-- Problems content - 2 columnas + 1 centro -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start"
+        >
+          <!-- Left column -->
+          <div data-aos="fade-right" class="lg:col-span-4 space-y-6">
+            <div
+              class="bg-gradient-to-br from-primary-500 to-primary-600 text-white p-6 rounded-xl"
+            >
+              <h3 class="text-lg font-bold mb-4 text-center">
+                Problemas de Mordida
+              </h3>
+              <div class="space-y-3 text-sm">
+                <div>
+                  <p class="font-semibold">• Sobremordida:</p>
+                  <p class="opacity-90 text-xs">
+                    Los dientes superiores cubren los inferiores en oclusión.
+                  </p>
+                </div>
+                <div>
+                  <p class="font-semibold">• Mordida Invertida:</p>
+                  <p class="opacity-90 text-xs">
+                    Los dientes inferiores sobresalen sobre los dientes
+                    superiores.
+                  </p>
+                </div>
+                <div>
+                  <p class="font-semibold">• Mordida Abierta:</p>
+                  <p class="opacity-90 text-xs">
+                    Espacio entre los dientes anteriores superiores y los
+                    anteriores inferiores.
+                  </p>
+                </div>
+                <div>
+                  <p class="font-semibold">• Mordida Cruzada:</p>
+                  <p class="opacity-90 text-xs">
+                    Uno o más dientes superiores ocluyen por dentro de los
+                    dientes inferiores.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center column - Children -->
+          <div data-aos="fade-up" class="lg:col-span-4 flex justify-center">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden max-w-sm">
+              <img
+                class="w-full h-48 object-cover"
+                src="/images/ninos.webp"
+                alt="Ortodoncia para niños"
+                loading="lazy"
+              />
+              <div class="p-4">
+                <p class="text-sm text-neutral-700 text-center">
+                  Con servicios especializados en ortopedia maxilar y
+                  ortodoncia, trabajamos para asegurar que cada niño tenga una
+                  sonrisa saludable y funcional.
+                  <strong class="text-primary-600"
+                    >¡Cuidamos las sonrisas más importantes con amor y
+                    experiencia!</strong
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column -->
+          <div data-aos="fade-left" class="lg:col-span-4 space-y-6">
+            <div
+              class="bg-gradient-to-br from-secondary-500 to-secondary-600 text-white p-6 rounded-xl"
+            >
+              <h3 class="text-lg font-bold mb-4 text-center">
+                Problemas de Alineación
+              </h3>
+              <div class="space-y-3 text-sm">
+                <div>
+                  <p class="font-semibold">• Desviación de Línea Media:</p>
+                  <p class="opacity-90 text-xs">
+                    El centro de los dientes superiores no coincide con el
+                    centro de los dientes inferiores.
+                  </p>
+                </div>
+                <div>
+                  <p class="font-semibold">• Diastemas:</p>
+                  <p class="opacity-90 text-xs">
+                    Espacios existentes entre los dientes que pueden provocar
+                    enfermedades periodontales.
+                  </p>
+                </div>
+                <div>
+                  <p class="font-semibold">• Apiñamiento:</p>
+                  <p class="opacity-90 text-xs">
+                    No existe suficiente espacio en el maxilar y puede generar
+                    dificultades para lavarse los dientes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12 sm:py-16">
+      <div
+        class="relative rounded-2xl bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-500 overflow-hidden p-8 sm:p-12"
+      >
+        <div class="relative text-center text-white space-y-6">
+          <div data-aos="fade-up">
+            <h2
+              class="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif mb-4"
+            >
+              ¿Listo para Transformar tu Sonrisa?
+            </h2>
+            <p
+              class="text-lg sm:text-xl opacity-90 max-w-2xl mx-auto leading-relaxed"
+            >
+              Nuestro compromiso es brindarte una atención integral para que tu
+              sonrisa sea tu mejor carta de presentación.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
+          >
+            <a
+              href="/turnos"
+              class="bg-white text-primary-600 hover:bg-neutral-100 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center"
+            >
+              <svg
+                class="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                ></path>
+              </svg>
+              Solicitar Consulta
+            </a>
+            <a
+              href="https://wa.me/5492214085498"
+              target="_blank"
+              class="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center"
+            >
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.087z"
+                ></path>
+              </svg>
+              WhatsApp: 221 408-5498
+            </a>
+          </div>
+
+          <!-- Trust indicators -->
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            class="grid grid-cols-3 gap-6 max-w-md mx-auto pt-6"
+          >
+            <div class="text-center">
+              <div class="text-2xl sm:text-3xl font-bold text-white">300+</div>
+              <div class="text-xs text-white/80 font-medium">Pacientes</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl sm:text-3xl font-bold text-white">98%</div>
+              <div class="text-xs text-white/80 font-medium">Satisfacción</div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl sm:text-3xl font-bold text-white">10+</div>
+              <div class="text-xs text-white/80 font-medium">Años</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
+
+<script>
+  setTimeout(() => {
+    document.querySelector(".group").classList.add("underline-active");
+  }, 1000); // 1000ms = 1 segundo
+</script>

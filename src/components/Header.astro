@@ -1,67 +1,312 @@
 ---
-import HeaderButton from "./HeaderButton.astro"
+import HeaderButton from "./HeaderButton.astro";
 ---
 
-    <header class="pt-6 px-4 mx-auto md:pt-10 md:px-6 min-w-screen bg-contrast relative">        
-        <!-- menu small -->
-        <nav class="bg-primaryDarck md:hidden">
-            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-                <h1 class="text-lg w-fit text-start font-mono tracking-tight font-bold text-white" >Ortodoncia Danovara</h1>
-                <button data-collapse-toggle="mega-menu-full" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary" aria-controls="mega-menu-full" aria-expanded="false">
-                    <svg class="w-5 h-5 text-secondary" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                    </svg>
-                </button>
-                <div id="mega-menu-full" class="items-center justify-between hidden w-full">
-                    <ul class="flex flex-col mt-4 font-medium rtl:space-x-reverse">
-                        <li>
-                            <a href="/" class="block py-2 text-secondary border-b border-contrast hover:bg-gray-50 dark:text-background" aria-current="page">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="/alineadores" class="block py-2 text-secondary border-b border-contrast hover:text-white">Alineadores</a>
-                        </li>
-                        <li>
-                            <a href="/brackets" class="block py-2 text-secondary border-b border-contrast hover:text-white">Brackets</a>
-                        </li>
-                        <li>
-                            <a href="/blanqueamiento" class="block py-2 text-secondary border-b border-contrast hover:text-white">Blanqueamientos</a>
-                        </li>
-                        <li>
-                            <a href="/piercing" class="block py-2 text-secondary border-b border-contrast hover:text-white">Piercing Dentales</a>
-                        </li>
-                        <li>
-                            <a href="/pacientes" class="block py-2 text-secondary border-b border-contrast hover:text-white">Pacientes</a>
-                        </li>
-                        <li>
-                            <a href="/conoceme" class="block py-2 text-secondary border-b border-contrast hover:text-white">Conóceme</a>
-                        </li>
-                        <li>
-                            <a href="/turnos" class="block py-2 text-white border-b border-contrast hover:text-secondary">Turnos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-            <!-- menu a partir de md -->
-                <div class="hidden md:flex flex-col">
-                    <div class="mx-auto text-center">
-                        <h1 class="mb-6 text-lg md:text-2xl xl:text-4xl w-full font-mono py-4 uppercase tracking-wide font-medium text-white" >Ortodoncia Carolina Danovara</h1>
-                    </div>
-                    <div class="absolute bottom-2.5 right-4 p-1">
-                        <a class='flex-row border-none w-auto text-sm lg:text-base xl:text-lg 2xl:text-xl justify-center text-white hover:text-secondary cursor-pointer hover:drop-shadow-lg hover:scale-110 md:px-0 lg:px-4 py-2 text-center inline-flex items-center mr-2 mb-0 md:mb-2 transition-all duration-300 ease-in-out scale-95 gap-x-2' href="/turnos">
-                            Turnos
-                        </a>
-                    </div>
-                </div>
-                <nav class="hidden md:flex -ml-6 p-4 items-center justify-between w-11/12 text-center flex-nowrap flex-row bg-white rounded-tr-2xl">
-                    <HeaderButton rute="/">Inicio</HeaderButton>
-                    <HeaderButton rute="/alineadores">Alineadores</HeaderButton>
-                    <HeaderButton rute="/brackets" >Brackets</HeaderButton> 
-                    <HeaderButton rute="/blanqueamiento" >Blanqueamientos</HeaderButton>
-                    <HeaderButton rute="/piercing" >Piercing dental</HeaderButton>
-                    <HeaderButton rute="/pacientes" >Pacientes</HeaderButton> 
-                    <HeaderButton rute="/conoceme">Conóceme</HeaderButton>
-                </nav>
-            </header>
-        
+<header
+  class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-neutral-100 shadow-sm"
+>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <!-- Mobile Navigation -->
+    <nav class="block lg:hidden">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo/Brand -->
+        <div class="flex items-center space-x-2">
+          <div class="flex-shrink-0">
+            <img
+              class="h-8 w-8"
+              src="/favicon.png"
+              alt="Logo Ortodoncia Danovara"
+            />
+          </div>
+          <div class="flex flex-col">
+            <h1
+              class="text-sm font-bold text-neutral-900 font-serif leading-tight"
+            >
+              Ortodoncia <span class="text-primary-600">Danovara</span>
+            </h1>
+          </div>
+        </div>
 
+        <!-- Mobile menu button -->
+        <button
+          type="button"
+          class="inline-flex items-center justify-center p-2 rounded-lg text-neutral-600 hover:text-primary-600 hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors duration-200"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          data-collapse-toggle="mobile-menu"
+        >
+          <span class="sr-only">Abrir menú principal</span>
+          <svg
+            class="block h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu dropdown -->
+      <div class="hidden" id="mobile-menu">
+        <div
+          class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-neutral-100"
+        >
+          <a href="/" class="mobile-nav-link">
+            <svg
+              class="w-4 h-4 pr-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              ></path>
+            </svg>
+            Inicio
+          </a>
+          <a href="/alineadores" class="mobile-nav-link">
+            <svg
+              class="w-4 h-4 pr-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 12 C4 8, 8 6, 12 6 C16 6, 20 8, 20 12 C20 16, 16 18, 12 18 C8 18, 4 16, 4 12 Z"
+                stroke-width="1.5"
+                fill="none"
+                opacity="0.7"></path>
+              <path
+                d="M6 12 C6 9, 8.5 7.5, 12 7.5 C15.5 7.5, 18 9, 18 12 C18 15, 15.5 16.5, 12 16.5 C8.5 16.5, 6 15, 6 12 Z"
+                stroke-width="1"
+                fill="none"
+                opacity="0.5"></path>
+              <rect
+                x="8"
+                y="10"
+                width="1.5"
+                height="4"
+                rx="0.5"
+                fill="currentColor"
+                opacity="0.3"></rect>
+              <rect
+                x="10.5"
+                y="9.5"
+                width="1.5"
+                height="5"
+                rx="0.5"
+                fill="currentColor"
+                opacity="0.3"></rect>
+              <rect
+                x="13"
+                y="9.5"
+                width="1.5"
+                height="5"
+                rx="0.5"
+                fill="currentColor"
+                opacity="0.3"></rect>
+              <rect
+                x="15.5"
+                y="10"
+                width="1.5"
+                height="4"
+                rx="0.5"
+                fill="currentColor"
+                opacity="0.3"></rect>
+            </svg>
+            Alineadores
+          </a>
+          <a href="/brackets" class="mobile-nav-link">
+            <svg
+              class="w-4 h-4 pr-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="8"
+                y="6"
+                width="8"
+                height="12"
+                rx="1"
+                stroke-width="2"
+                fill="none"></rect>
+              <line x1="6" y1="12" x2="8" y2="12" stroke-width="2"></line>
+              <line x1="16" y1="12" x2="18" y2="12" stroke-width="2"></line>
+              <circle cx="10" cy="10" r="0.5" fill="currentColor"></circle>
+              <circle cx="14" cy="10" r="0.5" fill="currentColor"></circle>
+              <circle cx="10" cy="14" r="0.5" fill="currentColor"></circle>
+              <circle cx="14" cy="14" r="0.5" fill="currentColor"></circle>
+            </svg>
+            Brackets
+          </a>
+          <a href="/blanqueamiento" class="mobile-nav-link">
+            <svg
+              class="w-4 h-4 pr-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+              ></path>
+            </svg>
+            Blanqueamientos
+          </a>
+          <a href="/piercing" class="mobile-nav-link">
+            <svg
+              class="w-4 h-4 pr-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+              ></path>
+            </svg>
+            Piercing Dental
+          </a>
+          <a href="/pacientes" class="mobile-nav-link">
+            <svg
+              class="w-4 h-4 pr-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+            Pacientes
+          </a>
+          <a href="/conoceme" class="mobile-nav-link">
+            <svg
+              class="w-4 h-4 pr-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              ></path>
+            </svg>
+            Conóceme
+          </a>
+
+          <!-- CTA Button in mobile -->
+          <div class="pt-4 pb-2">
+            <a
+              href="/turnos"
+              class="w-full bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 text-center inline-flex items-center justify-center"
+            >
+              <svg
+                class="w-4 h-4 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                ></path>
+              </svg>
+              Solicitar Turno
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden lg:block">
+      <div class="flex items-center justify-between h-18">
+        <!-- Logo and Brand -->
+        <div class="flex items-center space-x-3">
+          <div class="flex-shrink-0">
+            <img
+              class="h-10 w-10"
+              src="/favicon.png"
+              alt="Logo Ortodoncia Danovara"
+            />
+          </div>
+          <div>
+            <h1
+              class="text-xl font-bold text-neutral-900 font-serif leading-tight"
+            >
+              Ortodoncia <span class="text-primary-600">Carolina Danovara</span>
+            </h1>
+            <p class="text-xs text-neutral-600 font-medium">
+              Ortodoncista Especialista
+            </p>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="flex items-center space-x-1">
+          <HeaderButton rute="/">Inicio</HeaderButton>
+          <HeaderButton rute="/alineadores">Alineadores</HeaderButton>
+          <HeaderButton rute="/brackets">Brackets</HeaderButton>
+          <HeaderButton rute="/blanqueamiento">Blanqueamientos</HeaderButton>
+          <HeaderButton rute="/piercing">Piercing</HeaderButton>
+          <HeaderButton rute="/pacientes">Pacientes</HeaderButton>
+          <HeaderButton rute="/conoceme">Conóceme</HeaderButton>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="flex items-center">
+          <a
+            href="/turnos"
+            class="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center"
+            title="Solicitar Turno"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .mobile-nav-link {
+    @apply flex items-center space-x-3 px-3 py-2.5 rounded-lg text-sm font-medium text-neutral-700 hover:text-primary-600 hover:bg-primary-50 transition-all duration-200;
+  }
+
+  .mobile-nav-link.active {
+    @apply text-primary-600 bg-primary-50;
+  }
+</style>

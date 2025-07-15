@@ -1,69 +1,403 @@
 ---
-import Card from '../components/Card.astro'
-import Layout from '../layouts/Layout.astro'
-import AosInit from '../components/Aos.init'
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+import AosInit from "../components/Aos.init";
 ---
 
-<Layout title="Ortodoncia La Plata | Piercing Dental" description="Descubre la última tendencia en modificación dental con piercing dentales en La Plata, ofrecidos por la Dra. Carolina Danovara. Conoce los procedimientos seguros y estilos disponibles. Explora cómo un piercing dental puede agregar un toque de estilo a tu sonrisa de manera segura y profesional.">
-	<AosInit client:load />
-	<main class="mx-auto flex-col justify-items-center">
+<Layout
+  title="Ortodoncia La Plata | Piercing Dental"
+  description="Descubre la última tendencia en modificación dental con piercing dentales en La Plata, ofrecidos por la Dra. Carolina Danovara. Conoce los procedimientos seguros y estilos disponibles. Explora cómo un piercing dental puede agregar un toque de estilo a tu sonrisa de manera segura y profesional."
+>
+  <AosInit client:load />
+  <main class="pt-8 pb-16">
+    <!-- Hero Section -->
+    <section class="relative py-12 sm:py-16">
+      <div class="text-center space-y-6 max-w-4xl mx-auto">
+        <!-- Main heading -->
+        <h1
+          data-aos="fade-up"
+          class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-serif leading-tight"
+        >
+          Piercing <span class="text-primary-600">Dental</span>
+        </h1>
 
-        <section class="min-h-screen w-11/12 md:w-10/12 2xl:w-9/12 mx-auto my-8 md:my-12 lg:my-16 xl:my-20 justify-items-center">
-			
-			<h2 class="text-center text-lg md:text-xl xl:text-2xl text-contrast w-full uppercase">Añade un Toque de Brillo a tu Sonrisa</h2>
+        <!-- Subtitle -->
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-xl sm:text-2xl text-secondary-600 font-serif"
+        >
+          Añade un Toque de Brillo a tu Sonrisa
+        </h2>
 
-            <section class="my-8 md:my-12 lg:my-16 xl:my-20">
-                <div class="flex flex-col justify-center items-center mb-4 md:mb-8 xl:mb-12 gap-2">
-                    <div data-aos="slide-up" class="text-dark text-center flex flex-col md:flex-row md:justify-between">
-                        <div class="w-full md:w-[25%]" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Description -->
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="text-base sm:text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto"
+        >
+          Ofrecemos piercings dentales para aquellos que buscan una forma única
+          de personalizar su sonrisa. Estos adornos dentales son pequeños,
+          seguros y pueden añadir un toque de elegancia y personalidad a tu
+          apariencia.
+        </p>
+      </div>
+    </section>
 
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">Piercings dentales</p>
-                            <p class="mb-4 text-start text-black text-base md:text-lg xl:text-xl">Ofrecemos piercings dentales para aquellos que buscan una forma única de personalizar su sonrisa. Estos adornos dentales son pequeños, seguros y pueden añadir un toque de elegancia y personalidad a tu apariencia.</p>      
-                        </div>
-                        <div class="w-full md:w-[25%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+    <!-- Information Section -->
+    <section class="py-12 bg-gradient-to-br from-neutral-50 to-white">
+      <div class="space-y-12">
+        <!-- Section content -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start"
+        >
+          <!-- What are dental piercings -->
+          <div data-aos="fade-up" class="space-y-4">
+            <h3
+              class="text-xl sm:text-2xl font-bold text-primary-600 font-serif"
+            >
+              ¿Qué son los Piercings Dentales?
+            </h3>
+            <p class="text-neutral-600 leading-relaxed">
+              Los piercings dentales son pequeños adornos que se colocan en la
+              superficie del diente. A diferencia de los piercings
+              tradicionales, estos no perforan el diente, sino que se adhieren
+              de manera segura y temporal a la superficie dental.
+            </p>
+            <ul class="text-neutral-600 space-y-2 text-sm">
+              <li class="flex items-start gap-2">
+                <span class="text-primary-600 font-bold">•</span>
+                Sin perforación del diente
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary-600 font-bold">•</span>
+                Procedimiento reversible
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-primary-600 font-bold">•</span>
+                Variedad de diseños disponibles
+              </li>
+            </ul>
+          </div>
 
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">¿Qué son los Piercings Dentales?</p>         
-                            <p class="mb-4 text-start text-black text-base md:text-lg xl:text-xl">Los piercings dentales, también conocidos como joyas dentales, son pequeños adornos que se colocan en la superficie de los dientes. Estas joyas están disponibles en una variedad de formas y colores, y pueden ser una manera divertida y elegante de destacar tu sonrisa.</p>    
-                        </div>
-
-                        <div class="w-full md:w-[45%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">Nuestro Proceso de Colocación de Piercings Dentales</p> 
-    
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Consulta Inicial:</strong> Evaluamos la salud de tus dientes y encías para asegurarnos de que eres un buen candidato para un piercing dental.</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Selección de la Joya:</strong> Te ayudamos a elegir la joya que mejor se adapte a tu estilo y preferencias. Disponemos de una variedad de opciones.</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Preparación del Diente:</strong> Limpiamos y preparamos la superficie del diente donde se colocará la joya.</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Colocación de la Joya:</strong> Utilizamos un adhesivo dental seguro para fijar la joya en tu diente. El proceso es rápido y no invasivo.</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Cuidados Posteriores:</strong> Te proporcionamos instrucciones detalladas sobre cómo cuidar tu piercing dental para asegurar que se mantenga en perfecto estado.</p>
-                        </div>
-                    </div>
-                    <div data-aos="slide-up" class="text-dark text-center mt-4 md:mt-8 xl:mt-12 2xl:mt-20">
-
-                        <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-secondaryDark">Beneficios de los Piercings Dentales </p> 
-
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Personalización:</strong> Una manera única de expresar tu estilo personal.</p>
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Procedimiento Seguro:</strong> Realizado por profesionales con experiencia para garantizar tu seguridad y comodidad.</p> 
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Durabilidad:</strong> Las joyas dentales están diseñadas para ser duraderas y resistir el desgaste diario.</p>
-                    </div>
-                </div> 
-            </section>
-        </section>
-      
-        <section class="h-fit mx-auto w-11/12 md:w-10/12  2xl:w-9/12 my-8 md:my-12 lg:my-16 xl:my-20">
-			<div class="flex flex-col justify-center items-center  md:justify-between md:flex-row mb-4 md:mb-8 xl:mb-12 gap-2">
-				<div data-aos="fade-up">
-                    <Card image="/images/piercing1.webp" title="¡Contactate con nosotros para confeccionar tu diseño!" text="Corazón realizado con 8 cristales."/>
-                </div>
-                <div data-aos="fade-down">
-                    <Card title="Condiciones:" text="Buen estado de salud bucodental, ausencia de caries.">
-                        <img class="mt-8 rounded-xl" src="/images/piercing3.webp"/>
-                    </Card>
-                </div>
-                <div data-aos="fade-up">
-                    <Card title="Tu imaginación es el límite." text="Diseño: estrella." image="/images/piercing2.webp">
-                    </Card>
-                </div>
+          <!-- Procedure -->
+          <div data-aos="fade-up" data-aos-delay="100" class="space-y-4">
+            <h3
+              class="text-xl sm:text-2xl font-bold text-primary-600 font-serif"
+            >
+              Procedimiento Seguro
+            </h3>
+            <p class="text-neutral-600 leading-relaxed">
+              El procedimiento es completamente seguro y se realiza en nuestra
+              clínica con las más altas medidas de esterilización. El piercing
+              se adhiere al diente mediante un adhesivo dental especial.
+            </p>
+            <div class="space-y-3 text-sm text-neutral-600">
+              <div class="flex items-start gap-3">
+                <span
+                  class="bg-primary-100 text-primary-600 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold"
+                  >1</span
+                >
+                <span>Evaluación y limpieza dental</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span
+                  class="bg-primary-100 text-primary-600 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold"
+                  >2</span
+                >
+                <span>Selección del diseño</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <span
+                  class="bg-primary-100 text-primary-600 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold"
+                  >3</span
+                >
+                <span>Colocación precisa</span>
+              </div>
             </div>
-		</section>
-	</main>
+          </div>
+
+          <!-- Care and maintenance -->
+          <div data-aos="fade-up" data-aos-delay="200" class="space-y-4">
+            <h3
+              class="text-xl sm:text-2xl font-bold text-primary-600 font-serif"
+            >
+              Cuidados y Mantenimiento
+            </h3>
+            <p class="text-neutral-600 leading-relaxed">
+              Los piercings dentales requieren cuidados mínimos y pueden durar
+              varios meses con el mantenimiento adecuado. Te proporcionamos
+              todas las instrucciones necesarias.
+            </p>
+            <div class="space-y-2 text-sm text-neutral-600">
+              <div class="flex items-center gap-2">
+                <span class="text-primary-600">✓</span>
+                <span>Higiene oral regular</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-primary-600">✓</span>
+                <span>Evitar alimentos muy duros</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-primary-600">✓</span>
+                <span>Controles periódicos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Types of Piercings -->
+    <section class="py-12">
+      <div class="text-center space-y-6 mb-12">
+        <h2
+          data-aos="fade-up"
+          class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+        >
+          Tipos de <span class="text-primary-600">Piercings Disponibles</span>
+        </h2>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-neutral-600 max-w-2xl mx-auto"
+        >
+          Ofrecemos una amplia variedad de diseños para que puedas elegir el que
+          mejor se adapte a tu personalidad.
+        </p>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-12 bg-gradient-to-br from-primary-50 to-white">
+      <div class="text-center space-y-6 mb-12">
+        <h2
+          data-aos="fade-up"
+          class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+        >
+          Ventajas de los <span class="text-primary-600"
+            >Piercings Dentales</span
+          >
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div data-aos="fade-up" class="text-center space-y-4">
+          <div
+            class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto"
+          >
+            <span class="text-primary-600 text-2xl">✨</span>
+          </div>
+          <h3 class="text-lg font-bold text-neutral-900">Expresión Personal</h3>
+          <p class="text-neutral-600 text-sm">
+            Una forma única de expresar tu personalidad y estilo individual.
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-center space-y-4"
+        >
+          <div
+            class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto"
+          >
+            <span class="text-primary-600 text-2xl">🔒</span>
+          </div>
+          <h3 class="text-lg font-bold text-neutral-900">Totalmente Seguro</h3>
+          <p class="text-neutral-600 text-sm">
+            Procedimiento no invasivo que no daña la estructura dental.
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="text-center space-y-4"
+        >
+          <div
+            class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto"
+          >
+            <span class="text-primary-600 text-2xl">🔄</span>
+          </div>
+          <h3 class="text-lg font-bold text-neutral-900">Reversible</h3>
+          <p class="text-neutral-600 text-sm">
+            Puedes removerlo cuando desees sin dejar rastros permanentes.
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="text-center space-y-4"
+        >
+          <div
+            class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto"
+          >
+            <span class="text-primary-600 text-2xl">⚡</span>
+          </div>
+          <h3 class="text-lg font-bold text-neutral-900">Rápido y Sencillo</h3>
+          <p class="text-neutral-600 text-sm">
+            El procedimiento toma solo unos minutos y es completamente indoloro.
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          class="text-center space-y-4"
+        >
+          <div
+            class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto"
+          >
+            <span class="text-primary-600 text-2xl">💎</span>
+          </div>
+          <h3 class="text-lg font-bold text-neutral-900">
+            Variedad de Diseños
+          </h3>
+          <p class="text-neutral-600 text-sm">
+            Amplia selección de estilos, colores y materiales disponibles.
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="500"
+          class="text-center space-y-4"
+        >
+          <div
+            class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto"
+          >
+            <span class="text-primary-600 text-2xl">👩‍⚕️</span>
+          </div>
+          <h3 class="text-lg font-bold text-neutral-900">
+            Profesional Certificada
+          </h3>
+          <p class="text-neutral-600 text-sm">
+            Realizado por la Dra. Carolina Danovara con años de experiencia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-12">
+      <div class="text-center space-y-6 mb-12">
+        <h2
+          data-aos="fade-up"
+          class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+        >
+          Preguntas <span class="text-primary-600">Frecuentes</span>
+        </h2>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-6">
+        <div
+          data-aos="fade-up"
+          class="bg-white rounded-lg p-6 shadow-sm border border-neutral-200"
+        >
+          <h3 class="text-lg font-bold text-neutral-900 mb-3">
+            ¿Duele el procedimiento?
+          </h3>
+          <p class="text-neutral-600">
+            No, el procedimiento es completamente indoloro. Solo se siente una
+            ligera presión durante la colocación del piercing, similar a la
+            sensación de un chequeo dental regular.
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="bg-white rounded-lg p-6 shadow-sm border border-neutral-200"
+        >
+          <h3 class="text-lg font-bold text-neutral-900 mb-3">
+            ¿Cuánto tiempo dura el piercing?
+          </h3>
+          <p class="text-neutral-600">
+            Con el cuidado adecuado, un piercing dental puede durar entre 6
+            meses y 2 años. La duración depende de tus hábitos alimenticios y de
+            higiene oral.
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="bg-white rounded-lg p-6 shadow-sm border border-neutral-200"
+        >
+          <h3 class="text-lg font-bold text-neutral-900 mb-3">
+            ¿Se puede comer normalmente?
+          </h3>
+          <p class="text-neutral-600">
+            Sí, puedes comer normalmente. Solo recomendamos evitar alimentos
+            extremadamente duros o pegajosos que puedan desprender el piercing.
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-lg p-6 shadow-sm border border-neutral-200"
+        >
+          <h3 class="text-lg font-bold text-neutral-900 mb-3">
+            ¿Daña el esmalte dental?
+          </h3>
+          <p class="text-neutral-600">
+            No, cuando es realizado por un profesional cualificado, el piercing
+            dental no daña el esmalte. Utilizamos adhesivos especiales que son
+            seguros para los dientes.
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          class="bg-white rounded-lg p-6 shadow-sm border border-neutral-200"
+        >
+          <h3 class="text-lg font-bold text-neutral-900 mb-3">
+            ¿Puedo elegir el diseño?
+          </h3>
+          <p class="text-neutral-600">
+            Absolutamente. Tenemos una amplia variedad de diseños disponibles y
+            también podemos crear diseños personalizados según tus preferencias.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12">
+      <div
+        class="relative rounded-2xl bg-gradient-to-br from-secondary-500 to-primary-500 overflow-hidden p-8"
+      >
+        <div class="relative text-center text-white space-y-6">
+          <h2 class="text-2xl sm:text-3xl font-bold font-serif">
+            ¿Listo para Transformar tu Sonrisa?
+          </h2>
+          <p class="text-base sm:text-lg opacity-90 max-w-2xl mx-auto">
+            Agenda tu consulta hoy mismo y descubre cómo un piercing dental
+            puede añadir ese toque especial que estás buscando.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
+          >
+            <a
+              href="/turnos"
+              class="bg-white text-secondary-600 hover:bg-neutral-100 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Agendar Consulta
+            </a>
+            <a
+              href="https://wa.me/5492214085498"
+              target="_blank"
+              class="border-2 border-white text-white hover:bg-white hover:text-secondary-600 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              WhatsApp: 221 408-5498
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>

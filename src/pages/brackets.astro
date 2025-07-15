@@ -1,91 +1,412 @@
 ---
-import Card from '../components/Card.astro'
-import Layout from '../layouts/Layout.astro'
-import AosInit from '../components/Aos.init'
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+import AosInit from "../components/Aos.init";
 ---
 
-<Layout title="Ortodoncia La Plata | Brackets" description="Descubre la opción perfecta para corregir la alineación dental con brackets en La Plata con la Dra. Carolina Danovara. Ofrecemos brackets tradicionales y estéticos para niños y adultos. Conoce cómo nuestros tratamientos de ortodoncia pueden mejorar tu sonrisa de manera efectiva y personalizada.">
+<Layout
+  title="Ortodoncia La Plata | Brackets"
+  description="Descubre la opción perfecta para corregir la alineación dental con brackets en La Plata con la Dra. Carolina Danovara. Ofrecemos brackets tradicionales y estéticos para niños y adultos. Conoce cómo nuestros tratamientos de ortodoncia pueden mejorar tu sonrisa de manera efectiva y personalizada."
+>
+  <AosInit client:load />
+  <main class="pt-8 pb-16">
+    <!-- Hero Section -->
+    <section class="relative py-12 sm:py-16">
+      <div class="text-center space-y-6 max-w-4xl mx-auto">
+        <!-- Main heading -->
+        <h1
+          data-aos="fade-up"
+          class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-serif leading-tight"
+        >
+          Brackets <span class="text-primary-600">Dentales</span>
+        </h1>
 
-    <AosInit client:load />
-    <main class="mx-auto flex-col justify-items-center">
+        <!-- Subtitle -->
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-xl sm:text-2xl text-secondary-600 font-serif"
+        >
+          Una Solución Confiable para una Sonrisa Perfectamente Alineada
+        </h2>
 
-        <section class="min-h-screen w-11/12 md:w-10/12 2xl:w-9/12 mx-auto my-8 md:my-12 lg:my-16 xl:my-20 justify-items-center">
-			
-			<h2 class="text-center text-lg md:text-xl xl:text-2xl text-contrast w-full uppercase">Brackets Dentales</h2>
+        <!-- Description -->
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="text-base sm:text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto"
+        >
+          Ofrecemos tratamientos con brackets dentales para corregir una amplia
+          variedad de problemas de alineación dental. Nuestro equipo de
+          ortodoncistas expertos está comprometido a proporcionarte resultados
+          excepcionales y una sonrisa que te haga sentir seguro y feliz.
+        </p>
+      </div>
+    </section>
 
-            <section class="my-8 md:my-12 lg:my-16 xl:my-20">
-                <div class="flex flex-col justify-center items-center mb-4 md:mb-8 xl:mb-12 gap-2">
-                    <div data-aos="slide-up" class="text-dark text-center flex flex-col md:flex-row md:justify-between">
-                        <div class="w-full md:w-[30%]" data-aos="fade-up" data-aos-duration="1000">
+    <!-- Information Section -->
+    <section class="py-12 bg-gradient-to-br from-neutral-50 to-white">
+      <div class="space-y-12">
+        <!-- Section content -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start"
+        >
+          <!-- What are brackets -->
+          <div data-aos="fade-up" class="space-y-4">
+            <h3
+              class="text-xl sm:text-2xl font-bold text-neutral-900 font-serif text-primary-600"
+            >
+              ¿Qué son los Brackets Dentales?
+            </h3>
+            <p class="text-neutral-700 leading-relaxed">
+              Los brackets dentales son pequeños dispositivos metálicos o
+              cerámicos que se adhieren a la superficie de los dientes y se
+              conectan entre sí mediante alambres y elásticos. Estos componentes
+              ejercen presión suave pero constante sobre los dientes,
+              moviéndolos gradualmente hacia su posición deseada.
+            </p>
+          </div>
 
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">Una Solución Confiable para una Sonrisa Perfectamente Alineada</p>
-                            <p class="mb-4 text-start text-black text-base md:text-lg xl:text-xl">Ofrecemos tratamientos con brackets dentales para corregir una amplia variedad de problemas de alineación dental. Nuestro equipo de ortodoncistas expertos está comprometido a proporcionarte resultados excepcionales y una sonrisa que te haga sentir seguro y feliz.</p>      
-                        </div>
-                        <div class="w-full md:w-[30%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">¿Qué son los Brackets Dentales?</p>         
-                            <p class="mb-4 text-start text-black text-base md:text-lg xl:text-xl">Los brackets dentales son pequeños dispositivos metálicos o cerámicos que se adhieren a la superficie de los dientes y se conectan entre sí mediante alambres y elásticos. Estos componentes ejercen presión suave pero constante sobre los dientes, moviéndolos gradualmente hacia su posición deseada.</p>    
-                        </div>
-                        <div class="w-full md:w-[30%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">Ventajas de los Brackets Dentales</p> 
-    
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Efectividad Probada:</strong> Los brackets dentales son una opción confiable y probada para corregir problemas de alineación dental.</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Personalización:</strong> Ofrecemos una variedad de opciones de brackets para adaptarse a tus necesidades y preferencias estéticas.</p>
-                        </div>
-                    </div>
-                    <div data-aos="slide-up" class="text-dark text-center mt-4 md:mt-8 xl:mt-12 2xl:mt-20">
-
-                        <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-secondaryDark">Nuestro Proceso de Tratamiento con Brackets </p> 
-
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Consulta Inicial:</strong> Realizamos una evaluación completa de tu salud dental y discutimos tus objetivos de tratamiento.</p>
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Planificación Personalizada:</strong> Creamos un plan de tratamiento personalizado que aborde tus necesidades específicas y objetivos estéticos.</p> 
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Colocación de los Brackets:</strong> Colocamos los brackets en la superficie de tus dientes y conectamos los alambres y elásticos según el plan de tratamiento.</p>
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Ajustes Periódicos:</strong> Programamos citas regulares para realizar ajustes en tus brackets y alambres, asegurando un progreso constante hacia tu sonrisa ideal.</p>
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Retención:</strong> Una vez completado el tratamiento, te proporcionamos retenedores para mantener tus dientes en su nueva posición.</p>
-                    </div>
-                </div> 
-            </section>
-        </section>
-
-        <section class=" mx-auto h-fit w-11/12 md:w-10/12 2xl:w-9/12 my-8 md:my-12 lg:my-16 xl:my-20">
-			<div class="flex flex-col justify-center items-center md:justify-between md:flex-row mb-4 md:mb-8 xl:mb-12 gap-2 w-inherit h-fit">
-				<div data-aos="fade-up">
-                    <Card image="/images/brackets.webp" title="Tipos de brackets disponibles" text="Para iniciar un tratamiento de ortodoncia es importante evaluar el estado general de la boca y determinar cual es el tratamiento más adecuado para vos. Juntos encontraremos la manera de que consigas tus objetivos."/>
+          <!-- Advantages -->
+          <div data-aos="fade-up" data-aos-delay="200" class="space-y-4">
+            <h3
+              class="text-xl sm:text-2xl font-bold text-neutral-900 font-serif text-primary-600"
+            >
+              Ventajas de los Brackets
+            </h3>
+            <div class="space-y-3">
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                >
                 </div>
-                <div data-aos="fade-down">
-                    <Card image="/images/brackets3.webp" text="Es el tipo de ortodoncia más convencional y la más usada. Sus resultados son muy buenos y la ventaja principal de este tipo de ortodoncia es que su precio es más accesible que el de otros tratamientos. El presupuesto del tratamiento depende de cada caso clínico en particular."/>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Efectividad Probada:
+                  </p>
+                  <p class="text-sm text-neutral-600">
+                    Los brackets dentales son una opción confiable y probada
+                    para corregir problemas de alineación dental.
+                  </p>
                 </div>
-                <div data-aos="fade-up">
-                    <Card image="/images/brackets2.webp" text="Tienen la misma estructura que los brackets metálicos pero su diferencia radica en que están fabricados con materiales del mismo color que el diente (cerámica/zafiro) y que, por tanto, se mimetizan con este y pasan desapercibidos. El presupuesto del tratamiento depende de cada caso clínico en particular."/>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                >
                 </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">Personalización:</p>
+                  <p class="text-sm text-neutral-600">
+                    Ofrecemos una variedad de opciones de brackets para
+                    adaptarse a tus necesidades y preferencias estéticas.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                >
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Resultados Duraderos:
+                  </p>
+                  <p class="text-sm text-neutral-600">
+                    Los brackets proporcionan resultados estables y duraderos en
+                    el tiempo.
+                  </p>
+                </div>
+              </div>
             </div>
-		</section>
+          </div>
 
-        <section class=" mx-auto h-fit w-11/12 md:w-10/12 2xl:w-9/12 my-8 md:my-12 lg:my-16 xl:my-20">
-			<div class="flex flex-col justify-center items-center  md:justify-between md:flex-row mb-4 md:mb-8 xl:mb-12 gap-2 w-inherit h-fit">
-				<div data-aos="fade-up">
-                    <Card image="/images/brackets5.webp" text="Sus principales ventajas son su aspecto estético, su durabilidad y su funcionalidad, que muestran gran superioridad respecto a otras opciones. Es la opción preferida por muchos pacientes que los conocen como brackets invisibles. Por contra, su precio claramente más elevado que otras alternativas, es una gran desventaja pues no es apto para todos los bolsillos. Además tienen la ventaja de que no se tiñen con el paso del tiempo, a pesar de que se tomen bebidas colorantes, como el café, vino tinto, etc."/>
+          <!-- Process -->
+          <div data-aos="fade-up" data-aos-delay="400" class="space-y-4">
+            <h3
+              class="text-xl sm:text-2xl font-bold text-neutral-900 font-serif text-secondary-600"
+            >
+              Nuestro Proceso de Tratamiento
+            </h3>
+            <div class="space-y-3">
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center text-xs font-bold"
+                >
+                  1
                 </div>
-                <div data-aos="fade-down">
-                    <Card image="/images/brackets4.webp" text="Se colocan en la cara interna de los dientes y presentan la gran ventaja que no son visibles desde fuera. Aunque son totalmente estéticos, son complejos para colocarlos y su higiene también es más difícil. Es un tipo de ortodoncia más cara que la ortodoncia convencional. Con el fin de conseguir los mejores resultados, se fabrican a medida de cada paciente. Tienen la misma efectividad que los aparatos tradicionales, pero con la ventaja de que son imperceptibles y nadie notará que los llevas puestos."/>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Consulta Inicial:
+                  </p>
+                  <p class="text-sm text-neutral-600">
+                    Evaluación completa de tu salud dental y discusión de
+                    objetivos de tratamiento.
+                  </p>
                 </div>
-                <div data-aos="fade-up">
-                    <Card image="/images/brackets1.webp" text="Son uno de los tratamientos de ortodoncia menos conocidos, a pesar de que se colocan con mucha frecuencia en la actualidad. Se trata de un método que no lleva ligaduras “elásticos” o lo que comúnmente llamamos “gomitas” que unen el bracket al arco, cuentan con un pequeño clip que sujeta el arco y permite ejercer fuerzas livianas y baja fricción para corregir las maloclusiones y malposiciones dentarias."/>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center text-xs font-bold"
+                >
+                  2
                 </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Planificación Personalizada:
+                  </p>
+                  <p class="text-sm text-neutral-600">
+                    Creamos un plan de tratamiento personalizado que aborde tus
+                    necesidades específicas.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center text-xs font-bold"
+                >
+                  3
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Colocación de Brackets:
+                  </p>
+                  <p class="text-sm text-neutral-600">
+                    Colocamos los brackets en la superficie de tus dientes y
+                    conectamos los alambres según el plan.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center text-xs font-bold"
+                >
+                  4
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Ajustes Periódicos:
+                  </p>
+                  <p class="text-sm text-neutral-600">
+                    Citas regulares para realizar ajustes, asegurando un
+                    progreso constante.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center text-xs font-bold"
+                >
+                  5
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">Retención:</p>
+                  <p class="text-sm text-neutral-600">
+                    Retenedores para mantener tus dientes en su nueva posición.
+                  </p>
+                </div>
+              </div>
             </div>
-		</section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section class=" mx-auto h-fit w-11/12 md:w-10/12  2xl:w-9/12 my-8 md:my-12 lg:my-16 xl:my-20">
-			<div class="flex flex-col justify-center items-center  md:justify-between md:flex-row mb-4 md:mb-8 xl:mb-12 gap-2 w-inherit h-fit">
-				<div data-aos="fade-up">
-                    <Card image="/images/brackets7.webp" title="¡Tratamiento finalizado! ¿Y ahora qué?" text="Realizamos el retiro de los brackets, eliminando el cemento (pegamento) con ditintss piedras, gomas y discos para recuperar y mantener tu boca sana.Hacemos una topicación con flúor para fortalecer y reforzar el esmalte dentario y algunos pacientes me piden blanqueamiento." />
-                </div>
+    <!-- Types of Brackets Section -->
+    <section class="py-12">
+      <div class="space-y-12">
+        <!-- Section header -->
+        <div class="text-center space-y-4 max-w-3xl mx-auto">
+          <h2
+            data-aos="fade-up"
+            class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+          >
+            Tipos de <span class="text-primary-600">Brackets</span> Disponibles
+          </h2>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="text-base text-neutral-600"
+          >
+            Para iniciar un tratamiento de ortodoncia es importante evaluar el
+            estado general de la boca y determinar cuál es el tratamiento más
+            adecuado para vos. Juntos encontraremos la manera de que consigas
+            tus objetivos.
+          </p>
+        </div>
 
-                <div data-aos="fade-down">
-                    <Card image="/images/brackets1.webp" text="Son uno de los tratamientos de ortodoncia menos conocidos, a pesar de que se colocan con mucha frecuencia en la actualidad. Se trata de un método que no lleva ligaduras “elásticos” o lo que comúnmente llamamos “gomitas” que unen el bracket al arco, cuentan con un pequeño clip que sujeta el arco y permite ejercer fuerzas livianas y baja fricción para corregir las maloclusiones y malposiciones dentarias."/>
+        <!-- Types Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+        >
+          <!-- Metallic Brackets -->
+          <div data-aos="fade-up">
+            <Card
+              image="/images/brackets3.webp"
+              title="Brackets Metálicos"
+              text="Es el tipo de ortodoncia más convencional y la más usada. Sus resultados son muy buenos y la ventaja principal de este tipo de ortodoncia es que su precio es más accesible que el de otros tratamientos. El presupuesto del tratamiento depende de cada caso clínico en particular."
+            />
+          </div>
+
+          <!-- Aesthetic Brackets -->
+          <div data-aos="fade-up" data-aos-delay="200">
+            <Card
+              image="/images/brackets2.webp"
+              title="Brackets Estéticos"
+              text="Tienen la misma estructura que los brackets metálicos pero su diferencia radica en que están fabricados con materiales del mismo color que el diente (cerámica/zafiro) y que, por tanto, se mimetizan con este y pasan desapercibidos. El presupuesto del tratamiento depende de cada caso clínico en particular."
+            />
+          </div>
+
+          <!-- Sapphire Brackets -->
+          <div data-aos="fade-up" data-aos-delay="400">
+            <Card
+              image="/images/brackets5.webp"
+              title="Brackets de Zafiro"
+              text="Sus principales ventajas son su aspecto estético, su durabilidad y su funcionalidad, que muestran gran superioridad respecto a otras opciones. Es la opción preferida por muchos pacientes que los conocen como brackets invisibles. Además tienen la ventaja de que no se tiñen con el paso del tiempo, a pesar de que se tomen bebidas colorantes, como el café, vino tinto, etc."
+            />
+          </div>
+
+          <!-- Lingual Brackets -->
+          <div data-aos="fade-up" data-aos-delay="600">
+            <Card
+              image="/images/brackets4.webp"
+              title="Brackets Linguales"
+              text="Se colocan en la cara interna de los dientes y presentan la gran ventaja que no son visibles desde fuera. Aunque son totalmente estéticos, son complejos para colocarlos y su higiene también es más difícil. Con el fin de conseguir los mejores resultados, se fabrican a medida de cada paciente. Tienen la misma efectividad que los aparatos tradicionales, pero con la ventaja de que son imperceptibles y nadie notará que los llevas puestos."
+            />
+          </div>
+
+          <!-- Self-Ligating Brackets -->
+          <div data-aos="fade-up" data-aos-delay="800">
+            <Card
+              image="/images/brackets.webp"
+              title="Brackets Autoligantes"
+              text="Son uno de los tratamientos de ortodoncia menos conocidos, a pesar de que se colocan con mucha frecuencia en la actualidad. Se trata de un método que no lleva ligaduras 'elásticos' o lo que comúnmente llamamos 'gomitas' que unen el bracket al arco, cuentan con un pequeño clip que sujeta el arco y permite ejercer fuerzas livianas y baja fricción para corregir las maloclusiones y malposiciones dentarias."
+            />
+          </div>
+
+          <!-- Treatment Completion -->
+          <div data-aos="fade-up" data-aos-delay="1000">
+            <Card
+              image="/images/brackets1.webp"
+              title="¡Tratamiento finalizado! ¿Y ahora qué?"
+              text="Realizamos el retiro de los brackets, eliminando el cemento (pegamento) con distintas piedras, gomas y discos para recuperar y mantener tu boca sana. Hacemos una topicación con flúor para fortalecer y reforzar el esmalte dentario y algunos pacientes me piden blanqueamiento."
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Section -->
+    <section class="py-12 bg-gradient-to-br from-neutral-50 to-white">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <!-- Image -->
+        <div data-aos="fade-right">
+          <img
+            class="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 w-full"
+            src="/images/brackets7.webp"
+            alt="Resultado de tratamiento con brackets"
+            loading="lazy"
+          />
+        </div>
+
+        <!-- Content -->
+        <div data-aos="fade-left" class="space-y-6">
+          <h3
+            class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+          >
+            Resultados que <span class="text-primary-600"
+              >Transforman Vidas</span
+            >
+          </h3>
+
+          <div class="space-y-4 text-neutral-700">
+            <p class="leading-relaxed">
+              Los brackets dentales han demostrado ser una de las opciones más
+              efectivas para corregir problemas de alineación dental. Con más de
+              décadas de investigación y desarrollo, ofrecen resultados
+              predecibles y duraderos.
+            </p>
+
+            <div class="space-y-3">
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                >
                 </div>
+                <p>
+                  <strong class="text-primary-600">Corrección completa:</strong>
+                  Pueden tratar desde casos simples hasta los más complejos.
+                </p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-secondary-500 rounded-full mt-2"
+                >
+                </div>
+                <p>
+                  <strong class="text-secondary-600">Control preciso:</strong> Permiten
+                  un control exacto del movimiento dental.
+                </p>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                >
+                </div>
+                <p>
+                  <strong class="text-primary-600">Variedad de opciones:</strong
+                  > Desde metálicos hasta estéticos, hay una opción para cada necesidad.
+                </p>
+              </div>
             </div>
-		</section>
-	</main>
+
+            <div
+              class="p-4 bg-primary-50 rounded-lg border-l-4 border-primary-500"
+            >
+              <p class="text-primary-800 font-medium italic">
+                "Cada bracket colocado es un paso hacia la sonrisa que siempre
+                soñaste. El camino puede ser gradual, pero los resultados son
+                para toda la vida."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12">
+      <div
+        class="relative rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 overflow-hidden p-8"
+      >
+        <div class="relative text-center text-white space-y-6">
+          <h2 class="text-2xl sm:text-3xl font-bold font-serif">
+            ¿Listo para Comenzar tu Tratamiento?
+          </h2>
+          <p class="text-base sm:text-lg opacity-90 max-w-2xl mx-auto">
+            Los brackets son la solución más confiable y efectiva para corregir
+            problemas de alineación dental. Agenda tu consulta y descubre qué
+            tipo de brackets es el ideal para ti.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
+          >
+            <a
+              href="/turnos"
+              class="bg-white text-primary-600 hover:bg-neutral-100 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Solicitar Consulta
+            </a>
+            <a
+              href="https://wa.me/5492214085498"
+              target="_blank"
+              class="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              WhatsApp: 221 408-5498
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>

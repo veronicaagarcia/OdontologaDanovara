@@ -1,58 +1,514 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import AosInit from '../components/Aos.init'
+import Layout from "../layouts/Layout.astro";
+import AosInit from "../components/Aos.init";
 ---
 
-<Layout title="Ortodoncia La Plata | Pacientes" description="Descubre los increíbles resultados de nuestros tratamientos de ortodoncia para niños y adultos en La Plata con la Dra. Carolina Danovara. Explora nuestra galería de fotos de antes y después para ver transformaciones reales en sonrisas. ¡Inspírate con casos exitosos y descubre cómo podemos mejorar tu salud dental y estética!">
-	<AosInit client:load />
-	<main class="mx-auto flex-col justify-items-center">
+<Layout
+  title="Ortodoncia La Plata | Pacientes"
+  description="Descubre los increíbles resultados de nuestros tratamientos de ortodoncia para niños y adultos en La Plata con la Dra. Carolina Danovara. Explora nuestra galería de fotos de antes y después para ver transformaciones reales en sonrisas. ¡Inspírate con casos exitosos y descubre cómo podemos mejorar tu salud dental y estética!"
+>
+  <AosInit client:load />
 
-        <section class="min-h-screen w-11/12 md:w-10/12 2xl:w-9/12 mx-auto my-8 md:my-12 lg:my-16 xl:my-20 justify-items-center">
+  <main class="pt-8 pb-16">
+    <!-- Hero Section -->
+    <section class="relative py-12 sm:py-16">
+      <div class="text-center space-y-6 max-w-4xl mx-auto">
+        <!-- Main heading -->
+        <h1
+          data-aos="fade-up"
+          class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-serif leading-tight"
+        >
+          Transformaciones que
+          <span class="text-primary-600">Hablan por Sí Solas</span>
+        </h1>
 
-        <h2 class="text-center text-lg md:text-xl xl:text-2xl text-contrast w-full uppercase">¡Transformaciones que hablan por sí solas!</h2>
-		
-        <p data-aos="fade-up" data-aos-duration="1000" class="my-4 md:my-8 xl:my-20 text-center text-base md:text-lg xl:text-xl 2xl:text-2xl text-dark">Estamos orgullosos de los resultados que logramos para nuestros pacientes. A continuación, te presentamos una serie de imágenes de antes y después que muestran las mejoras significativas en la salud y estética dental de nuestros pacientes. Estas fotos destacan los increíbles cambios que nuestros tratamientos pueden ofrecer.</p>
-        
-        <!-- Gallery -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div data-aos="slide-up">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery1.webp" alt="">
+        <!-- Description -->
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-base sm:text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto"
+        >
+          Estamos orgullosos de los resultados que logramos para nuestros
+          pacientes. Cada sonrisa cuenta una historia de transformación,
+          confianza y bienestar.
+        </p>
+
+        <!-- Stats -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="grid grid-cols-3 gap-6 pt-6 max-w-lg mx-auto"
+        >
+          <div class="text-center">
+            <div class="text-2xl sm:text-3xl font-bold text-primary-600">
+              300+
             </div>
-            <div data-aos="slide-down">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery2.webp" alt="">
+            <div class="text-xs sm:text-sm text-neutral-600 font-medium">
+              Pacientes Atendidos
             </div>
-            <div data-aos="slide-up">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery3.webp" alt="">
+          </div>
+          <div class="text-center">
+            <div class="text-2xl sm:text-3xl font-bold text-secondary-600">
+              98%
             </div>
-            <div data-aos="slide-up">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery4.webp" alt="">
+            <div class="text-xs sm:text-sm text-neutral-600 font-medium">
+              Satisfacción
             </div>
-            <div data-aos="slide-down">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery5.webp" alt="">
+          </div>
+          <div class="text-center">
+            <div class="text-2xl sm:text-3xl font-bold text-primary-600">
+              10+
             </div>
-            <div data-aos="slide-up">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery6.webp" alt="">
+            <div class="text-xs sm:text-sm text-neutral-600 font-medium">
+              Años de Experiencia
             </div>
-            <div data-aos="slide-up">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery7.webp" alt="">
-            </div>
-            <div data-aos="slide-down">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery8.webp" alt="">
-            </div>
-            <div data-aos="slide-up">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery9.webp" alt="">
-            </div>
-            <div data-aos="slide-up">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery10.webp" alt="">
-            </div>
-            <div data-aos="slide-down">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery11.webp" alt="">
-            </div>
-            <div data-aos="slide-up">
-                <img class="scale95 hover:scale-110 h-auto max-w-full rounded-lg" src="/images/gallery12.webp" alt="">
-            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-12">
+      <div class="space-y-8">
+        <!-- Section header -->
+        <div class="text-center space-y-4 max-w-3xl mx-auto">
+          <h2
+            data-aos="fade-up"
+            class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+          >
+            Antes y Después
+          </h2>
+          <p
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="text-base text-neutral-600"
+          >
+            Cada imagen representa no solo un cambio estético, sino una mejora
+            en la calidad de vida, autoestima y salud dental de nuestros
+            pacientes.
+          </p>
         </div>
 
-        </section>
-	</main>
+        <!-- Filter buttons -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="flex flex-wrap justify-center gap-3"
+        >
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="brackets">Brackets</button>
+          <button class="filter-btn" data-filter="alineadores"
+            >Alineadores</button
+          >
+          <button class="filter-btn" data-filter="adultos">Adultos</button>
+          <button class="filter-btn" data-filter="ninos">Niños</button>
+        </div>
+
+        <!-- Gallery Grid - Tamaños más apropiados -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6"
+          id="gallery"
+        >
+          <!-- Gallery items con mejor proporción -->
+          <div
+            class="gallery-item"
+            data-category="brackets adultos"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery1.webp"
+                alt="Caso antes y después con brackets - Adulto"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Brackets Metálicos</p>
+                  <p class="text-xs opacity-90">Adulto - 18 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="brackets adultos"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery2.webp"
+                alt="Caso antes y después con brackets - Adulto"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Brackets Metálicos</p>
+                  <p class="text-xs opacity-90">Adulto - 12 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="brackets ninos"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery3.webp"
+                alt="Caso antes y después con brackets - Niño"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Brackets Metálicos</p>
+                  <p class="text-xs opacity-90">Adolescente - 24 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="alineadores adultos"
+            data-aos="zoom-in"
+            data-aos-delay="250"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery4.webp"
+                alt="Caso antes y después con alineadores - Adulto"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Alineadores invisibles</p>
+                  <p class="text-xs opacity-90">Adulto - 15 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="brackets adultos"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery5.webp"
+                alt="Caso antes y después con brackets - Adulto"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Brackets zafiro</p>
+                  <p class="text-xs opacity-90">Adulto - 10 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="brackets adultos"
+            data-aos="zoom-in"
+            data-aos-delay="350"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery6.webp"
+                alt="Caso antes y después con brackets - Adulto"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Brackets Metálicos</p>
+                  <p class="text-xs opacity-90">Adolescente - 20 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="brackets ninos"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery7.webp"
+                alt="Caso antes y después con brackets - ninos"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Brackets Metálicos</p>
+                  <p class="text-xs opacity-90">Niño - 12 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="brackets ninos"
+            data-aos="zoom-in"
+            data-aos-delay="450"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery8.webp"
+                alt="Caso antes y después con brackets - Adulto"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Brackets Metálicos</p>
+                  <p class="text-xs opacity-90">Niño - 14 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="brackets ninos"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery9.webp"
+                alt="Caso antes y después con brackets - Niño"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Brackets Metálicos</p>
+                  <p class="text-xs opacity-90">Adolescente - 22 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="brackets adultos"
+            data-aos="zoom-in"
+            data-aos-delay="550"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery10.webp"
+                alt="Caso antes y después con brackets - Adulto"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Brackets Metálicos</p>
+                  <p class="text-xs opacity-90">Adulto - 20 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="brackets adultos"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery11.webp"
+                alt="Caso antes y después con brackets - Adulto"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Brackets Metálicos</p>
+                  <p class="text-xs opacity-90">Adulto - 11 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-category="brackets ninos"
+            data-aos="zoom-in"
+            data-aos-delay="650"
+          >
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <img
+                class="w-full h-48 sm:h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                src="/images/gallery12.webp"
+                alt="Caso antes y después con brackets - Niño"
+                loading="lazy"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <div class="absolute bottom-3 left-3 text-white">
+                  <p class="text-xs font-semibold">Brackets Metálicos</p>
+                  <p class="text-xs opacity-90">Adolescente - 18 meses</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12">
+      <div
+        class="relative rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 overflow-hidden p-8"
+      >
+        <div class="relative text-center text-white space-y-6">
+          <h2 class="text-2xl sm:text-3xl font-bold font-serif">
+            ¿Listo para Tu Transformación?
+          </h2>
+          <p class="text-base sm:text-lg opacity-90 max-w-2xl mx-auto">
+            Únete a cientos de pacientes que ya han transformado sus sonrisas.
+            Tu consulta inicial es el primer paso hacia la sonrisa que siempre
+            soñaste.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
+          >
+            <a
+              href="/turnos"
+              class="bg-white text-primary-600 hover:bg-neutral-100 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Solicitar Consulta
+            </a>
+            <a
+              href="https://wa.me/5492214085498"
+              target="_blank"
+              class="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              WhatsApp: 221 408-5498
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
+
+<style>
+  .filter-btn {
+    @apply px-4 py-2 text-sm font-medium rounded-full transition-all duration-300;
+    @apply text-neutral-600 bg-neutral-100 hover:bg-primary-100 hover:text-primary-700;
+  }
+
+  .filter-btn.active {
+    @apply bg-primary-500 text-white;
+  }
+
+  .gallery-item {
+    @apply transition-all duration-300;
+  }
+
+  .gallery-item.hidden {
+    @apply opacity-0 scale-95 pointer-events-none;
+  }
+</style>
+
+<script>
+  // Gallery filtering functionality
+  document.addEventListener("DOMContentLoaded", function () {
+    const filterBtns = document.querySelectorAll(".filter-btn");
+    const galleryItems = document.querySelectorAll(".gallery-item");
+
+    filterBtns.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        // Remove active class from all buttons
+        filterBtns.forEach((b) => b.classList.remove("active"));
+        // Add active class to clicked button
+        this.classList.add("active");
+
+        const filter = this.getAttribute("data-filter");
+
+        galleryItems.forEach((item) => {
+          if (filter === "all") {
+            item.classList.remove("hidden");
+          } else {
+            const categories = item.getAttribute("data-category");
+            if (categories && categories.includes(filter)) {
+              item.classList.remove("hidden");
+            } else {
+              item.classList.add("hidden");
+            }
+          }
+        });
+      });
+    });
+  });
+</script>

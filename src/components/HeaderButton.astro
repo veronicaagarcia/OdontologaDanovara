@@ -1,6 +1,21 @@
 ---
-const { rute} = Astro.props
+const { rute } = Astro.props;
+const currentPath = Astro.url.pathname;
+const isActive = currentPath === rute || (currentPath === "/" && rute === "/");
 ---
-<a class={`flex-row justify-center border-none w-auto text-sm lg:text-base xl:text-lg 2xl:text-xl text-contrast hover:text-secondaryDark cursor-pointer md:px-0 lg:px-4 py-2 text-center inline-flex items-center  mr-2 mb-0 md:mb-2 hover:drop-shadow-lg hover:scale-110 transition-all duration-300 ease-in-out scale-95 gap-x-2 `} href={rute}>
-    <slot/>
+
+<a
+  href={rute}
+  class={`
+		px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200
+		${
+      isActive
+        ? "text-primary-600 bg-primary-50"
+        : "text-neutral-700 hover:text-primary-600 hover:bg-primary-50/50"
+    }
+		focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-1
+	`}
+  aria-current={isActive ? "page" : undefined}
+>
+  <slot />
 </a>

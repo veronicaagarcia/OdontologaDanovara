@@ -1,126 +1,498 @@
 ---
-import Card from '../components/Card.astro'
-import Layout from '../layouts/Layout.astro'
-import AosInit from '../components/Aos.init'
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
+import AosInit from "../components/Aos.init";
 ---
 
-<Layout title="Ortodoncia La Plata | Alineadores" description="Obtén una sonrisa perfecta con alineadores dentales en La Plata con la Dra. Carolina Danovara. Tratamientos de ortodoncia invisible para niños y adultos. Descubre cómo los alineadores pueden mejorar tu sonrisa de manera cómoda y estética.">
-    <AosInit client:load />
-	<main class="mx-auto flex-col justify-items-center">
+<Layout
+  title="Ortodoncia La Plata | Alineadores"
+  description="Obtén una sonrisa perfecta con alineadores dentales en La Plata con la Dra. Carolina Danovara. Tratamientos de ortodoncia invisible para niños y adultos. Descubre cómo los alineadores pueden mejorar tu sonrisa de manera cómoda y estética."
+>
+  <AosInit client:load />
+  <main class="pt-8 pb-16">
+    <!-- Hero Section -->
+    <section class="relative py-12 sm:py-16">
+      <div class="text-center space-y-6 max-w-4xl mx-auto">
+        <!-- Main heading -->
+        <h1
+          data-aos="fade-up"
+          class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-serif leading-tight"
+        >
+          Alineadores <span class="text-primary-600">Invisibles</span>
+        </h1>
 
-        <section class="min-h-screen w-11/12 md:w-10/12 2xl:w-9/12 mx-auto my-8 md:my-12 lg:my-16 xl:my-20 justify-items-center">
-			
-			<h2 class="text-center text-lg md:text-xl xl:text-2xl text-contrast w-full uppercase">Alineadores Invisibles</h2>
+        <!-- Subtitle -->
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-xl sm:text-2xl text-secondary-600 font-serif"
+        >
+          Sonríe con confianza, sin brackets
+        </h2>
 
-            <section class="my-8 md:my-12 lg:my-16 xl:my-20">
-                <div class="flex flex-col justify-center items-center mb-4 md:mb-8 xl:mb-12 gap-2">
-                    <div data-aos="slide-up" class="text-dark text-center flex flex-col md:flex-row md:justify-between">
-                        <div class="w-full md:w-[30%]" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Description -->
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="text-base sm:text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto"
+        >
+          Ofrecemos alineadores invisibles como una opción discreta y efectiva
+          para alinear tus dientes. Una excelente alternativa a los brackets
+          tradicionales, proporcionando una solución casi imperceptible para
+          corregir problemas de alineación dental.
+        </p>
+      </div>
+    </section>
 
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">Sonríe con confianza, sin brackets</p>
-                            <p class="mb-4 text-start text-black text-base md:text-lg xl:text-xl">Ofrecemos alineadores invisibles como una opción discreta y efectiva para alinear tus dientes. Estos dispositivos son una excelente alternativa a los brackets tradicionales, proporcionando una solución casi imperceptible para corregir problemas de alineación dental.</p>      
-                        </div>
-                        <div class="w-full md:w-[30%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+    <!-- What are Aligners Section -->
+    <section class="py-12 bg-gradient-to-br from-neutral-50 to-white">
+      <div class="space-y-12">
+        <!-- Section content -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start"
+        >
+          <!-- What are they -->
+          <div data-aos="fade-up" class="space-y-4">
+            <h3
+              class="text-xl sm:text-2xl font-bold text-neutral-900 font-serif text-primary-600"
+            >
+              ¿Qué son los Alineadores Invisibles?
+            </h3>
+            <p class="text-neutral-700 leading-relaxed">
+              Los alineadores invisibles son férulas transparentes y removibles
+              hechas a medida para ajustarse perfectamente a tus dientes. Están
+              diseñados para mover gradualmente los dientes a su posición ideal
+              mediante una serie de alineadores personalizados que se cambian
+              cada pocas semanas.
+            </p>
+          </div>
 
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">¿Qué son los Alineadores Invisibles?</p>         
-                            <p class="mb-4 text-start text-black text-base md:text-lg xl:text-xl">Los alineadores invisibles son férulas transparentes y removibles hechas a medida para ajustarse perfectamente a tus dientes. Están diseñados para mover gradualmente los dientes a su posición ideal mediante una serie de alineadores personalizados que se cambian cada pocas semanas.</p>    
-                        </div>
-
-                        <div class="w-full md:w-[30%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">Ventajas de los Alineadores Invisibles</p> 
-    
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Discreción:</strong> Su diseño transparente los hace prácticamente invisibles.</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Comodidad:</strong> Hechos de material suave y flexible, sin los cables y brackets de los aparatos tradicionales.</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Removibles:</strong> Puedes quitártelos para comer, beber y realizar tu higiene dental.</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">Eficacia:</strong> Pueden corregir una amplia variedad de problemas de alineación dental, desde leves hasta moderados.</p>
-                        </div>
-                    </div>
-                    <div data-aos="slide-up" class="text-dark text-center mt-4 md:mt-8 xl:mt-12 2xl:mt-20">
-
-                        <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-secondaryDark ">Nuestro Proceso de Tratamiento con Alineadores </p> 
-
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Consulta Inicial:</strong> Realizamos una evaluación completa de tu salud dental y discutimos tus objetivos y expectativas.</p>
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Escaneo Digital 3D:</strong> Utilizamos tecnología avanzada para crear un modelo digital de tus dientes, a partir del cual diseñamos tu plan de tratamiento personalizado.</p> 
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Creación de Alineadores Personalizados:</strong> Fabricamos una serie de alineadores hechos a medida para tus dientes. Cada juego de alineadores se usa durante aproximadamente dos semanas antes de pasar al siguiente.</p>
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Seguimiento y Ajustes:</strong> Programamos citas regulares para monitorear tu progreso y realizar los ajustes necesarios para asegurar que tus dientes se estén moviendo según lo planificado.</p>
-                        <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Mantenimiento y Retención:</strong> Una vez completado el tratamiento, te proporcionamos retenedores para mantener tus dientes en su nueva posición.</p>
-                    </div>
-                </div> 
-            </section>
-        </section>
-
-        <section class="h-fit w-11/12 md:w-10/12 mx-auto 2xl:w-9/12 my-8 md:my-12 lg:my-16 xl:my-20">
-			<div class="flex flex-col justify-center items-center  md:justify-between md:flex-row mb-4 md:mb-8 xl:mb-12 gap-2">
-				<div data-aos="fade-up">
-                    <Card image="/images/alineadores.webp">
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                                Invisibles.
-                        </p>
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                                Cómodos.
-                        </p>
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                                Precisos.
-                        </p>
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                                Efectivos.
-                        </p>
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                            Se retiran para comer.
-                        </p>
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                            No lastiman tu boca.
-                        </p>
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                            Seguimiento virtual.
-                        </p>
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                                Se utilizan 22hs diarias.
-                        </p>
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                                Se cambian cada 15 días.
-                        </p>
-                    </Card>
+          <!-- Advantages -->
+          <div data-aos="fade-up" data-aos-delay="200" class="space-y-4">
+            <h3
+              class="text-xl sm:text-2xl font-bold text-neutral-900 font-serif text-primary-600"
+            >
+              Ventajas de los Alineadores
+            </h3>
+            <div class="space-y-3">
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                >
                 </div>
-                <div data-aos="fade-down">
-                    <Card title="¿Cuantas veces pensaste en comenzar un tratamiento de ortodoncia pero no te animás a usar brackets?" text="Bueno, si te sentís identificado/a y tenés ganas de obtener cambios en tu sonrisa la ortodoncia con alineadores es para vos.">
-                        <img class="mt-8 rounded-xl" src="/images/alineadoresCard1.webp"/>
-                    </Card>
+                <div>
+                  <p class="font-semibold text-neutral-900">Discreción:</p>
+                  <p class="text-sm text-neutral-600">
+                    Su diseño transparente los hace prácticamente invisibles.
+                  </p>
                 </div>
-                <div data-aos="fade-up">
-                    <Card image="/images/alineadoresCard2.webp">
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                            Consulta de evaluación y fotos iniciales.
-                        </p>
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                            Radiografias y estudios cefalométricos.
-                        </p>
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                            Escaneo intraoral.
-                        </p>
-                        <p class="mb-4 text-start text-base md:text-lg xl:text-xl text-white flex">
-                            <svg  xmlns="http://www.w3.org/2000/svg"  width="26"  height="26"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-checkbox pr-1 text-secondaryDark"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 11l3 3l8 -8" /><path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
-                            Confección de tus Alineadores.
-                        </p>
-                        <p class="mt-2 md:mt-10 mb-4 text-start text-base md:text-lg xl:text-xl text-white"> 
-                            La duración del tratamiento puede variar de 9 meses a 1 año y medio, dependiendo de la complejidad del caso.
-                        </p>
-                    </Card>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                >
                 </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">Comodidad:</p>
+                  <p class="text-sm text-neutral-600">
+                    Hechos de material suave y flexible, sin cables ni brackets.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                >
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">Removibles:</p>
+                  <p class="text-sm text-neutral-600">
+                    Puedes quitártelos para comer, beber y realizar tu higiene
+                    dental.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-2 h-2 bg-primary-500 rounded-full mt-2"
+                >
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">Eficacia:</p>
+                  <p class="text-sm text-neutral-600">
+                    Pueden corregir una amplia variedad de problemas de
+                    alineación dental.
+                  </p>
+                </div>
+              </div>
             </div>
-		</section>
-	</main>
+          </div>
+
+          <!-- Process -->
+          <div data-aos="fade-up" data-aos-delay="400" class="space-y-4">
+            <h3
+              class="text-xl sm:text-2xl font-bold text-neutral-900 font-serif text-secondary-600"
+            >
+              Nuestro Proceso
+            </h3>
+            <div class="space-y-3">
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center text-xs font-bold"
+                >
+                  1
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Consulta Inicial:
+                  </p>
+                  <p class="text-sm text-neutral-600">
+                    Evaluación completa de tu salud dental y discusión de
+                    objetivos.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center text-xs font-bold"
+                >
+                  2
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Escaneo Digital 3D:
+                  </p>
+                  <p class="text-sm text-neutral-600">
+                    Tecnología avanzada para crear un modelo digital de tus
+                    dientes.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center text-xs font-bold"
+                >
+                  3
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">
+                    Alineadores Personalizados:
+                  </p>
+                  <p class="text-sm text-neutral-600">
+                    Serie de alineadores hechos a medida, cada uno usado
+                    aproximadamente dos semanas.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center text-xs font-bold"
+                >
+                  4
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">Seguimiento:</p>
+                  <p class="text-sm text-neutral-600">
+                    Citas regulares para monitorear progreso y realizar ajustes
+                    necesarios.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div
+                  class="flex-shrink-0 w-6 h-6 bg-secondary-100 text-secondary-600 rounded-full flex items-center justify-center text-xs font-bold"
+                >
+                  5
+                </div>
+                <div>
+                  <p class="font-semibold text-neutral-900">Retención:</p>
+                  <p class="text-sm text-neutral-600">
+                    Retenedores para mantener tus dientes en su nueva posición.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features and Benefits Section -->
+    <section class="py-12">
+      <div class="space-y-12">
+        <!-- Section header -->
+        <div class="text-center space-y-4 max-w-3xl mx-auto">
+          <h2
+            data-aos="fade-up"
+            class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+          >
+            ¿Por qué elegir <span class="text-primary-600"
+              >Alineadores Invisibles</span
+            >?
+          </h2>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+          <!-- Features Card -->
+          <div data-aos="fade-up">
+            <Card
+              image="/images/alineadores.webp"
+              title="Características Principales"
+            >
+              <div class="space-y-2">
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Invisibles y discretos
+                </p>
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Cómodos y precisos
+                </p>
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Efectivos y seguros
+                </p>
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Se retiran para comer
+                </p>
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  No lastiman tu boca
+                </p>
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Seguimiento virtual
+                </p>
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Se utilizan 22hs diarias
+                </p>
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-green-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  Se cambian cada 15 días
+                </p>
+              </div>
+            </Card>
+          </div>
+
+          <!-- Question Card -->
+          <div data-aos="fade-down">
+            <Card
+              title="¿Cuántas veces pensaste en comenzar un tratamiento de ortodoncia pero no te animás a usar brackets?"
+              text="Bueno, si te sentís identificado/a y tenés ganas de obtener cambios en tu sonrisa la ortodoncia con alineadores es para vos."
+            >
+              <img
+                class="mt-4 rounded-lg w-full"
+                src="/images/alineadoresCard1.webp"
+                alt="Alineadores invisibles"
+                loading="lazy"
+              />
+            </Card>
+          </div>
+
+          <!-- Process Card -->
+          <div data-aos="fade-up">
+            <Card
+              image="/images/alineadoresCard2.webp"
+              title="Proceso del Tratamiento"
+            >
+              <div class="space-y-2">
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Consulta de evaluación y fotos iniciales
+                </p>
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Radiografías y estudios cefalométricos
+                </p>
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Escaneo intraoral
+                </p>
+                <p class="flex items-center text-sm">
+                  <svg
+                    class="w-4 h-4 mr-2 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  Confección de tus Alineadores
+                </p>
+              </div>
+              <div class="mt-4 p-3 bg-blue-50 rounded-lg">
+                <p class="text-sm text-blue-800 font-medium">
+                  La duración del tratamiento puede variar de 9 meses a 1 año y
+                  medio, dependiendo de la complejidad del caso.
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12">
+      <div
+        class="relative rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 overflow-hidden p-8"
+      >
+        <div class="relative text-center text-white space-y-6">
+          <h2 class="text-2xl sm:text-3xl font-bold font-serif">
+            ¿Listo para una Sonrisa Invisible?
+          </h2>
+          <p class="text-base sm:text-lg opacity-90 max-w-2xl mx-auto">
+            Los alineadores invisibles son la solución perfecta para corregir tu
+            sonrisa sin que nadie lo note. Consulta sin compromiso y descubre si
+            eres candidato.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4"
+          >
+            <a
+              href="/turnos"
+              class="bg-white text-primary-600 hover:bg-neutral-100 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              Solicitar Consulta
+            </a>
+            <a
+              href="https://wa.me/5492214085498"
+              target="_blank"
+              class="border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+            >
+              WhatsApp: 221 408-5498
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>

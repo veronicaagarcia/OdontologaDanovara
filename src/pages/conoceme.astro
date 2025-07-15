@@ -1,94 +1,384 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import AosInit from '../components/Aos.init'
+import Layout from "../layouts/Layout.astro";
+import AosInit from "../components/Aos.init";
 ---
-<Layout title="Ortodoncia La Plata | Ortodoncista" description="Conoce más sobre la Dra. Carolina Danovara, ortodoncista en La Plata. Descubre nuestra pasión por la ortodoncia y el cuidado dental.">
-    <AosInit client:load />
-	<main class="mx-auto flex-col justify-items-center">
-        <section class="min-h-screen w-11/12 md:w-10/12 2xl:w-9/12 mx-auto my-8 md:my-12 lg:my-16 xl:my-20 justify-items-center">
-            <section class="my-8 md:my-12 lg:my-16 xl:my-20">
-                <div class="flex flex-col justify-center items-center mb-4 md:mb-8 xl:mb-12 gap-2">
-                    <div data-aos="slide-up" class="text-dark text-center flex flex-col md:flex-row md:justify-between">
-                        <div class="w-full md:w-[30%]" data-aos="fade-up" data-aos-duration="1000">
 
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">Estimados pacientes</p>
-                            <p class="mb-4 text-start text-black text-base md:text-lg xl:text-xl">Les invito cordialmente a visitar mis consultorios, donde valoramos tanto su salud dental como sus historias personales. En nuestro espacio de trabajo, nos dedicamos a escuchar y entender sus inquietudes, aspiraciones y objetivos de tratamiento. Recuerden que nunca es tarde para comenzar un tratamiento de ortodoncia. ¡Anímense a dar este importante paso hacia una mejor salud bucal!</p>      
-                        </div>
-                        <div class="w-full md:w-[30%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+<Layout
+  title="Ortodoncia La Plata | Contacto - Dra. Carolina Danovara"
+  description="Contacta con la Dra. Carolina Danovara, ortodoncista en La Plata. Conoce nuestras ubicaciones, horarios y formas de comunicación. Tu sonrisa perfecta te espera."
+>
+  <AosInit client:load />
+  <main class="pt-8 pb-16">
+    <!-- Hero Section -->
+    <section class="relative py-12 sm:py-16">
+      <div class="text-center space-y-6 max-w-4xl mx-auto">
+        <!-- Main heading -->
+        <h1
+          data-aos="fade-up"
+          class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-serif leading-tight"
+        >
+          Contacto y <span class="text-primary-600">Ubicaciones</span>
+        </h1>
 
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">¿Dudas?</p>         
-                            <p class="mb-4 text-start text-black text-base md:text-lg xl:text-xl">Si tienen alguna duda o pregunta, no duden en consultarme. Estoy aquí para asesorarlos y acompañarlos en cada etapa de su tratamiento.</p>    
-                        </div>
+        <!-- Subtitle -->
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-xl sm:text-2xl text-secondary-600 font-serif"
+        >
+          Estamos aquí para ayudarte en cada paso hacia tu sonrisa perfecta
+        </h2>
 
-                        <div class="w-full md:w-[30%]" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+        <!-- Description -->
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="text-base sm:text-lg text-neutral-600 leading-relaxed max-w-3xl mx-auto"
+        >
+          Agenda tu consulta hoy mismo. Nunca es tarde para comenzar un
+          tratamiento de ortodoncia.
+        </p>
+      </div>
+    </section>
 
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-primary">Sobre mi</p>
-
-                            <figure class=" flex items-center justify-end my-10 z-20">
-                                <img
-                                class="rounded-full w-20 md:w-28 shadow-md shadow-black"
-                                src="/images/Carolina.png"
-                                aria-hidden="true"/>
-                            </figure>
-    
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">•</strong> Soy de La Plata, provincia de Buenos Aires, y me gradué en la Universidad Nacional de La Plata.</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-primaryLight underline">•</strong> Mi número de matrícula profesional es <strong class="font-semibold">MP: 14799 y NARP: 06/20</strong>.</p>
-                           
-                        </div>
-                    </div>
-                    <div class="flex flex-col md:flex-row mt-4 md:mt-8 xl:mt-12 2xl:mt-20">
-
-                        <div data-aos="slide-up" class="text-dark text-center">
-    
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-secondaryDark">Estamos en: </p> 
-    
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">•</strong> Calle 17 entre 48 y 49 n°840 (Martes y Viernes)</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">•</strong> Calle 10 n°1489, casi esquina 63 (Jueves)</p> 
-                        </div>
-                        <div data-aos="slide-up" class="text-dark text-center">
-    
-                            <p class="my-4 md:my-8 text-center text-lg md:text-xl xl:text-2xl text-secondaryDark">Para consultas o más información, pueden: </p> 
-    
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Contactarnos por WhatsApp al:</strong> +5492214085498</p>
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Por correo electrónico a:</strong> carolina.danovara@hotmail.com</p> 
-                            <p class="text-start mb-4 text-black text-base md:text-lg xl:text-xl"><strong class="font-medium text-secondary underline">Seguirnos en Instagram:</strong> @ortodoncia.cd</p> 
-                        </div>
-                    </div>
-                </div> 
-            </section>
-    <!-- <main class="mx-auto pb-4 md:pb-8 flex-col justify-items-center pt-2 md:pt-4 mt-4 md:mt-8 "> -->
-		<!-- <div class="w-full mt-6 md:mt-12 flex mb-12 bg-primary opacity-80 py-10 px-5 rounded-xl">
-            <div class="flex justify-center relative">
-                <figure class="mr-2 absolute -top-4 right-1 md:-top-10 md:right-36 z-20">
-                    <img
-                    class="rounded-full w-20 md:w-28 shadow-md shadow-black"
-                    src="/images/Carolina.png"
-                    aria-hidden="true"/>
-                </figure>
-                <div class="bg-almostWhite w-11/12 md:w-3/5 rounded-3xl py-9 px-5 text-contrast"> 
-
-
-                    <p class="mb-4 text-primaryDark">Estimados pacientes,</p>
-
-                    <p class="mb-4">Les invito cordialmente a visitar mis consultorios, donde valoramos tanto su salud dental como sus historias personales. En nuestro espacio de trabajo, nos dedicamos a escuchar y entender sus inquietudes, aspiraciones y objetivos de tratamiento. Recuerden que nunca es tarde para comenzar un tratamiento de ortodoncia. ¡Anímense a dar este importante paso hacia una mejor salud bucal!</p>
-                    
-                    <p class="mb-4">Si tienen alguna duda o pregunta, no duden en consultarme. Estoy aquí para asesorarlos y acompañarlos en cada etapa de su tratamiento.</p>
-                    
-                    <p class="mb-4">Soy de La Plata, provincia de Buenos Aires, y me gradué en la Universidad Nacional de La Plata. Mi número de matrícula profesional es <strong class="font-semibold">MP: 14799 y NARP: 06/20</strong>.</p>
-                    
-                    <p class="mb-4">Pueden visitarnos en nuestras dos ubicaciones:</p> 
-                        <p class="pl-2 font-semibold">Calle 17 entre 48 y 49 n°840 (Martes y Viernes)</p>
-                        <p class="pl-2 font-semibold">Calle 10 n°1489, casi esquina 63 (Jueves)</p>
-                    <p class="mb-4 mt-4">Para consultas o más información, pueden: </p> 
-                    <p class="pl-2 font-semibold text-start mb-2">Contactarnos por WhatsApp al <strong class="bg-secondary rounded-xl px-1 font-normal">2214085498</strong></p>
-                    <p class="pl-2 font-semibold text-start mb-2">Por correo electrónico a <strong class="bg-secondary rounded-xl px-1 font-normal">carolina.danovara@hotmail.com</strong></p> 
-                    <p class="pl-2 font-semibold text-start mb-2">Seguirnos en Instagram: <strong class="bg-secondary rounded-xl px-1 font-normal">@ortodoncia.cd</strong></p>
-                    
-                    <p class="mb-4 mt-4">Atentamente,</p>
-                    <p class="text-center text-primaryDark">Danovara Carolina</p>
-
-                </div> 
+    <!-- Doctor Introduction Section -->
+    <section class="py-12 bg-gradient-to-br from-primary-50 to-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Doctor Photo -->
+          <div data-aos="fade-right" class="text-center lg:text-right">
+            <div class="relative inline-block">
+              <div
+                class="absolute inset-0 bg-primary-200 rounded-full transform rotate-6"
+              >
+              </div>
+              <img
+                class="relative rounded-full w-48 h-48 md:w-64 md:h-64 object-cover shadow-xl border-4 border-white"
+                src="/images/Carolina.png"
+                alt="Dra. Carolina Danovara - Ortodoncista en La Plata"
+              />
             </div>
-        </div> -->
-    </main>
+          </div>
+
+          <!-- Doctor Message -->
+          <div data-aos="fade-left" class="space-y-6">
+            <div class="space-y-4">
+              <h3
+                class="text-2xl sm:text-3xl font-bold text-primary-700 font-serif"
+              >
+                Dra. Carolina Danovara
+              </h3>
+              <p class="text-lg text-secondary-600 font-medium">
+                Ortodoncista Especialista
+              </p>
+            </div>
+
+            <div class="space-y-4 text-neutral-700">
+              <p class="text-lg leading-relaxed">
+                <span class="text-primary-600 font-semibold"
+                  >Estimados pacientes,</span
+                >
+              </p>
+              <p class="leading-relaxed">
+                Les invito cordialmente a visitar mis consultorios, donde
+                valoramos tanto su salud dental como sus historias personales.
+                En nuestro espacio de trabajo, nos dedicamos a escuchar y
+                entender sus inquietudes, aspiraciones y objetivos de
+                tratamiento.
+              </p>
+              <p class="leading-relaxed">
+                <strong class="text-primary-600"
+                  >Recuerden que nunca es tarde para comenzar un tratamiento de
+                  ortodoncia.</strong
+                >
+                ¡Anímense a dar este importante paso hacia una mejor salud bucal!
+              </p>
+            </div>
+
+            <!-- Professional Info -->
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-primary-100"
+            >
+              <h4 class="text-lg font-semibold text-neutral-900 mb-3">
+                Información Profesional
+              </h4>
+              <div class="space-y-2 text-sm">
+                <p class="flex items-center gap-2">
+                  <span class="text-primary-600">🎓</span>
+                  <span>Graduada en la Universidad Nacional de La Plata</span>
+                </p>
+                <p class="flex items-center gap-2">
+                  <span class="text-primary-600">📋</span>
+                  <span
+                    ><strong>MP:</strong> 14799 | <strong>NARP:</strong> 06/20</span
+                  >
+                </p>
+                <p class="flex items-center gap-2">
+                  <span class="text-primary-600">📍</span>
+                  <span>La Plata, Buenos Aires</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="py-12">
+      <div class="text-center space-y-6 mb-12">
+        <h2
+          data-aos="fade-up"
+          class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+        >
+          Formas de <span class="text-primary-600">Contacto</span>
+        </h2>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-neutral-600 max-w-2xl mx-auto"
+        >
+          Elige la forma que más te convenga para ponerte en contacto conmigo
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- WhatsApp -->
+        <div
+          data-aos="fade-up"
+          class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 text-center space-y-4 border border-green-200"
+        >
+          <div
+            class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto"
+          >
+            <span class="text-white text-2xl">📱</span>
+          </div>
+          <h3 class="text-xl font-bold text-green-800">WhatsApp</h3>
+          <p class="text-green-700 font-semibold">+54 9 221 408-5498</p>
+          <a
+            href="https://wa.me/5492214085498"
+            target="_blank"
+            class="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-green-600 transition duration-300"
+          >
+            Enviar Mensaje
+          </a>
+          <p class="text-sm text-green-600">Respuesta rápida y directa</p>
+        </div>
+
+        <!-- Email -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 text-center space-y-4 border border-blue-200"
+        >
+          <div
+            class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto"
+          >
+            <span class="text-white text-2xl">✉️</span>
+          </div>
+          <h3 class="text-xl font-bold text-blue-800">Email</h3>
+          <p class="text-blue-700 font-semibold break-all">
+            carolina.danovara@hotmail.com
+          </p>
+          <a
+            href="mailto:carolina.danovara@hotmail.com"
+            class="inline-block bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300"
+          >
+            Enviar Email
+          </a>
+          <p class="text-sm text-blue-600">Para consultas detalladas</p>
+        </div>
+
+        <!-- Instagram -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="bg-gradient-to-br from-pink-50 to-purple-100 rounded-xl p-6 text-center space-y-4 border border-pink-200"
+        >
+          <div
+            class="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center mx-auto"
+          >
+            <span class="text-white text-2xl">📸</span>
+          </div>
+          <h3 class="text-xl font-bold text-purple-800">Instagram</h3>
+          <p class="text-purple-700 font-semibold">@ortodoncia.cd</p>
+          <a
+            href="https://instagram.com/ortodoncia.cd"
+            target="_blank"
+            class="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full font-semibold hover:from-pink-600 hover:to-purple-600 transition duration-300"
+          >
+            Seguir
+          </a>
+          <p class="text-sm text-purple-600">Casos y consejos</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="py-12 bg-gradient-to-br from-neutral-50 to-white">
+      <div class="text-center space-y-6 mb-12">
+        <h2
+          data-aos="fade-up"
+          class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+        >
+          Nuestras <span class="text-primary-600">Ubicaciones</span>
+        </h2>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-neutral-600 max-w-2xl mx-auto"
+        >
+          Contamos con dos consultorios estratégicamente ubicados en La Plata
+          para tu comodidad
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <!-- Location 1 -->
+        <div
+          data-aos="fade-up"
+          class="bg-white rounded-xl p-8 shadow-lg border border-neutral-200"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0"
+            >
+              <span class="text-primary-600 text-xl">📍</span>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-xl font-bold text-neutral-900">
+                Consultorio Centro
+              </h3>
+              <div class="space-y-2">
+                <p class="text-lg font-semibold text-primary-600">
+                  Calle 17 entre 48 y 49 N° 840
+                </p>
+                <p class="text-neutral-600">La Plata, Buenos Aires</p>
+              </div>
+
+              <div class="bg-primary-50 rounded-lg p-4">
+                <h4 class="font-semibold text-primary-700 mb-2">
+                  Horarios de Atención
+                </h4>
+                <div class="space-y-1 text-sm">
+                  <p class="flex justify-between">
+                    <span>Martes:</span>
+                    <span class="font-medium">9:00 - 18:00</span>
+                  </p>
+                  <p class="flex justify-between">
+                    <span>Viernes:</span>
+                    <span class="font-medium">9:00 - 18:00</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location 2 -->
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="bg-white rounded-xl p-8 shadow-lg border border-neutral-200"
+        >
+          <div class="flex items-start gap-4">
+            <div
+              class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center flex-shrink-0"
+            >
+              <span class="text-secondary-600 text-xl">📍</span>
+            </div>
+            <div class="space-y-4">
+              <h3 class="text-xl font-bold text-neutral-900">
+                Consultorio Norte
+              </h3>
+              <div class="space-y-2">
+                <p class="text-lg font-semibold text-secondary-600">
+                  Calle 10 N° 1489, casi esquina 63
+                </p>
+                <p class="text-neutral-600">La Plata, Buenos Aires</p>
+              </div>
+
+              <div class="bg-secondary-50 rounded-lg p-4">
+                <h4 class="font-semibold text-secondary-700 mb-2">
+                  Horarios de Atención
+                </h4>
+                <div class="space-y-1 text-sm">
+                  <p class="flex justify-between">
+                    <span>Jueves:</span>
+                    <span class="font-medium">9:00 - 18:00</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-12">
+      <div class="text-center space-y-6 mb-12">
+        <h2
+          data-aos="fade-up"
+          class="text-2xl sm:text-3xl font-bold text-neutral-900 font-serif"
+        >
+          ¿Tienes <span class="text-primary-600">Dudas?</span>
+        </h2>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="text-neutral-600 max-w-2xl mx-auto"
+        >
+          Estoy aquí para asesorarte y acompañarte en cada etapa de tu
+          tratamiento
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-6">
+        <div
+          data-aos="fade-up"
+          class="bg-white rounded-lg p-6 shadow-sm border border-neutral-200"
+        >
+          <h3 class="text-lg font-bold text-neutral-900 mb-3">
+            ¿Cómo puedo agendar una cita?
+          </h3>
+          <p class="text-neutral-600">
+            Puedes contactarnos por WhatsApp, email o llamar directamente a
+            nuestros consultorios. Responderemos rápidamente para coordinar tu
+            primera consulta.
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="bg-white rounded-lg p-6 shadow-sm border border-neutral-200"
+        >
+          <h3 class="text-lg font-bold text-neutral-900 mb-3">
+            ¿Atienden obras sociales?
+          </h3>
+          <p class="text-neutral-600">
+            Consulta sobre tu obra social específica. Trabajamos con diversas
+            obras sociales y planes de financiación para hacer accesible tu
+            tratamiento.
+          </p>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="bg-white rounded-lg p-6 shadow-sm border border-neutral-200"
+        >
+          <h3 class="text-lg font-bold text-neutral-900 mb-3">
+            ¿Hay límite de edad para el tratamiento?
+          </h3>
+          <p class="text-neutral-600">
+            ¡Nunca es tarde para comenzar! Atendemos pacientes de todas las
+            edades, desde niños hasta adultos mayores. Cada caso es único y
+            merece atención personalizada.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
