@@ -488,20 +488,22 @@ import AosInit from "../components/Aos.init";
     const galleryItems = document.querySelectorAll(".gallery-item");
 
     filterBtns.forEach((btn) => {
-      btn.addEventListener("click", function () {
+      btn.addEventListener("click", function (event) {
         // Remove active class from all buttons
         filterBtns.forEach((b) => b.classList.remove("active"));
         // Add active class to clicked button
-        this.classList.add("active");
+        (event.currentTarget as HTMLElement).classList.add("active");
 
-        const filter = this.getAttribute("data-filter");
+        const filter = (event.currentTarget as HTMLElement).getAttribute(
+          "data-filter"
+        );
 
         galleryItems.forEach((item) => {
           if (filter === "all") {
             item.classList.remove("hidden");
           } else {
             const categories = item.getAttribute("data-category");
-            if (categories && categories.includes(filter)) {
+            if (categories && categories.includes(filter!)) {
               item.classList.remove("hidden");
             } else {
               item.classList.add("hidden");

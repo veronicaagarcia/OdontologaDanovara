@@ -1,6 +1,5 @@
 ---
 import AosInit from "../components/Aos.init";
-import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -445,6 +444,9 @@ import Layout from "../layouts/Layout.astro";
 
 <script>
   setTimeout(() => {
-    document.querySelector(".group").classList.add("underline-active");
+    const groupEl = document.querySelector(".group");
+    if (groupEl) {
+      groupEl.classList.add("underline-active");
+    }
   }, 1000); // 1000ms = 1 segundo
 </script>
